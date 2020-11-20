@@ -1,0 +1,1524 @@
+2020-10-26 12:23:39,185 - __main__ - INFO - Starting log at 2020-10-26 12:23:39.185637
+2020-10-26 12:23:39,186 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:23:39,208 - __main__ - INFO - Connected
+2020-10-26 12:23:39,208 - __main__ - INFO - 
+2020-10-26 12:23:40,139 - __main__ - INFO - 
+2020-10-26 12:23:40,140 - __main__ - INFO - Today's exchange hours are 09:00-1700
+2020-10-26 12:23:40,140 - __main__ - INFO - Waiting until the market opens (9:0)...
+2020-10-26 12:23:40,140 - __main__ - INFO - 
+2020-10-26 12:23:40,140 - __main__ - INFO - The market is now open 2020-10-26 12:23:40.140194+08:00
+2020-10-26 12:26:55,697 - __main__ - INFO - Starting log at 2020-10-26 12:26:55.697686
+2020-10-26 12:26:55,698 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:26:55,721 - __main__ - INFO - Connected
+2020-10-26 12:26:55,722 - __main__ - INFO - 
+2020-10-26 12:26:56,654 - __main__ - INFO - 
+2020-10-26 12:26:56,654 - __main__ - INFO - Today's exchange hours are 09:00-1700
+2020-10-26 12:26:56,654 - __main__ - INFO - Waiting until the market opens (9:0)...
+2020-10-26 12:26:56,654 - __main__ - INFO - 
+2020-10-26 12:26:56,654 - __main__ - INFO - The market is now open 2020-10-26 12:26:56.654628+08:00
+2020-10-26 12:27:08,831 - __main__ - INFO - Starting log at 2020-10-26 12:27:08.831472
+2020-10-26 12:27:08,831 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:27:08,868 - __main__ - INFO - Connected
+2020-10-26 12:27:08,868 - __main__ - INFO - 
+2020-10-26 12:27:09,858 - __main__ - INFO - 
+2020-10-26 12:27:09,858 - __main__ - INFO - Today's exchange hours are 09:00-1700
+2020-10-26 12:27:09,858 - __main__ - INFO - Waiting until the market opens (9:0)...
+2020-10-26 12:27:09,858 - __main__ - INFO - 
+2020-10-26 12:27:09,859 - __main__ - INFO - The market is now open 2020-10-26 12:27:09.858807+08:00
+2020-10-26 12:27:31,440 - __main__ - INFO - Starting log at 2020-10-26 12:27:31.440458
+2020-10-26 12:27:31,440 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:27:31,470 - __main__ - INFO - Connected
+2020-10-26 12:27:31,470 - __main__ - INFO - 
+2020-10-26 12:27:32,398 - __main__ - INFO - 
+2020-10-26 12:27:32,399 - __main__ - INFO - Today's exchange hours are 09:00-1700
+2020-10-26 12:27:32,399 - __main__ - INFO - Waiting until the market opens (9:0)...
+2020-10-26 12:27:32,399 - __main__ - INFO - 
+2020-10-26 12:27:32,399 - __main__ - INFO - The market is now open 2020-10-26 12:27:32.399283+08:00
+2020-10-26 12:29:39,571 - __main__ - INFO - Starting log at 2020-10-26 12:29:39.571552
+2020-10-26 12:29:39,571 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:29:39,588 - __main__ - INFO - Connected
+2020-10-26 12:29:39,589 - __main__ - INFO - 
+2020-10-26 12:29:40,482 - __main__ - INFO - 
+2020-10-26 12:29:40,482 - __main__ - INFO - Today's exchange hours are 09:00-1700
+2020-10-26 12:29:40,482 - __main__ - INFO - Waiting until the market opens (9:0)...
+2020-10-26 12:29:40,482 - __main__ - INFO - 
+2020-10-26 12:29:40,482 - __main__ - INFO - The market is now open 2020-10-26 12:29:40.482609+08:00
+2020-10-26 12:29:54,212 - __main__ - INFO - Starting log at 2020-10-26 12:29:54.212557
+2020-10-26 12:29:54,212 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:29:54,230 - __main__ - INFO - Connected
+2020-10-26 12:29:54,230 - __main__ - INFO - 
+2020-10-26 12:29:55,150 - __main__ - INFO - 
+2020-10-26 12:29:55,150 - __main__ - INFO - Today's exchange hours are 09:00-1700
+2020-10-26 12:29:55,150 - __main__ - INFO - Waiting until the market opens (9:0)...
+2020-10-26 12:30:24,823 - __main__ - INFO - Starting log at 2020-10-26 12:30:24.823555
+2020-10-26 12:30:24,823 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:30:24,843 - __main__ - INFO - Connected
+2020-10-26 12:30:24,843 - __main__ - INFO - 
+2020-10-26 12:30:25,833 - __main__ - INFO - 
+2020-10-26 12:30:25,833 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-26 12:30:25,833 - __main__ - INFO - Waiting until the market opens (17:15)...
+2020-10-26 12:31:23,710 - __main__ - INFO - Starting log at 2020-10-26 12:31:23.709992
+2020-10-26 12:31:23,710 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:31:23,732 - __main__ - INFO - Connected
+2020-10-26 12:31:23,732 - __main__ - INFO - 
+2020-10-26 12:31:24,654 - __main__ - INFO - OPENING TIME IS: 1715
+2020-10-26 12:31:24,654 - __main__ - INFO - 
+2020-10-26 12:31:24,654 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-26 12:31:24,654 - __main__ - INFO - Waiting until the market opens (17:15)...
+2020-10-26 12:32:08,993 - __main__ - INFO - Starting log at 2020-10-26 12:32:08.993207
+2020-10-26 12:32:08,993 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:32:09,025 - __main__ - INFO - Connected
+2020-10-26 12:32:09,025 - __main__ - INFO - 
+2020-10-26 12:32:09,972 - __main__ - INFO - 
+2020-10-26 12:32:09,972 - __main__ - INFO - Today's exchange hours are 0900-1700
+2020-10-26 12:32:09,973 - __main__ - INFO - Waiting until the market opens (9:0)...
+2020-10-26 12:32:35,644 - __main__ - INFO - Starting log at 2020-10-26 12:32:35.644551
+2020-10-26 12:32:35,644 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:32:35,678 - __main__ - INFO - Connected
+2020-10-26 12:32:35,678 - __main__ - INFO - 
+2020-10-26 12:32:36,584 - __main__ - INFO - 
+2020-10-26 12:32:36,585 - __main__ - INFO - Today's exchange hours are 1015-1700
+2020-10-26 12:32:36,585 - __main__ - INFO - Waiting until the market opens (10:15)...
+2020-10-26 12:33:12,143 - __main__ - INFO - Starting log at 2020-10-26 12:33:12.143874
+2020-10-26 12:33:12,144 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:33:12,174 - __main__ - INFO - Connected
+2020-10-26 12:33:12,174 - __main__ - INFO - 
+2020-10-26 12:33:13,094 - __main__ - INFO - 
+2020-10-26 12:33:13,094 - __main__ - INFO - Today's exchange hours are 1015-1700
+2020-10-26 12:33:13,094 - __main__ - INFO - Waiting until the market opens (10:15)...
+2020-10-26 12:34:05,143 - __main__ - INFO - Starting log at 2020-10-26 12:34:05.143246
+2020-10-26 12:34:05,143 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:34:05,179 - __main__ - INFO - Connected
+2020-10-26 12:34:05,180 - __main__ - INFO - 
+2020-10-26 12:34:06,495 - __main__ - INFO - 
+2020-10-26 12:34:06,496 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-26 12:34:06,496 - __main__ - INFO - Waiting until the market opens (17:15)...
+2020-10-26 12:35:17,317 - __main__ - INFO - Starting log at 2020-10-26 12:35:17.317568
+2020-10-26 12:35:17,317 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-26 12:35:17,360 - __main__ - INFO - Connected
+2020-10-26 12:35:17,360 - __main__ - INFO - 
+2020-10-26 12:35:18,261 - __main__ - INFO - OPENING TIME AT 1715
+2020-10-26 12:35:18,262 - __main__ - INFO - 
+2020-10-26 12:35:18,262 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-26 12:35:18,262 - __main__ - INFO - Waiting until the market opens (17:15)...
+2020-10-27 13:05:54,464 - __main__ - INFO - Starting log at 2020-10-27 13:05:54.464458
+2020-10-27 13:05:54,465 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:05:54,599 - __main__ - INFO - Connected
+2020-10-27 13:05:54,599 - __main__ - INFO - 
+2020-10-27 13:05:55,589 - __main__ - INFO - 
+2020-10-27 13:05:55,590 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:05:55,590 - __main__ - INFO - Waiting until the market opens (17:15)...
+2020-10-27 13:07:10,064 - __main__ - INFO - Starting log at 2020-10-27 13:07:10.064911
+2020-10-27 13:07:10,065 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:07:10,135 - __main__ - INFO - Connected
+2020-10-27 13:07:10,137 - __main__ - INFO - 
+2020-10-27 13:07:10,974 - __main__ - INFO - 
+2020-10-27 13:07:10,975 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:07:10,975 - __main__ - INFO - Waiting until the market opens (17:15)...
+2020-10-27 13:07:46,473 - __main__ - INFO - Starting log at 2020-10-27 13:07:46.473454
+2020-10-27 13:07:46,474 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:07:46,550 - __main__ - INFO - Connected
+2020-10-27 13:07:46,550 - __main__ - INFO - 
+2020-10-27 13:07:47,421 - __main__ - INFO - 
+2020-10-27 13:07:47,424 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:07:47,429 - __main__ - INFO - 
+2020-10-27 13:07:59,870 - __main__ - INFO - Starting log at 2020-10-27 13:07:59.870754
+2020-10-27 13:07:59,871 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:07:59,944 - __main__ - INFO - Connected
+2020-10-27 13:07:59,944 - __main__ - INFO - 
+2020-10-27 13:08:00,770 - __main__ - INFO - 
+2020-10-27 13:08:00,770 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:08:00,774 - __main__ - INFO - 
+2020-10-27 13:08:00,774 - __main__ - INFO - The market is now open 2020-10-27 01:08:00.774165-04:00
+2020-10-27 13:10:30,157 - __main__ - INFO - Starting log at 2020-10-27 13:10:30.157513
+2020-10-27 13:10:30,158 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:10:30,198 - __main__ - INFO - Connected
+2020-10-27 13:10:30,198 - __main__ - INFO - 
+2020-10-27 13:10:31,020 - __main__ - INFO - 
+2020-10-27 13:10:31,022 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:10:31,025 - __main__ - INFO - 
+2020-10-27 13:10:31,025 - __main__ - INFO - The market is now open 2020-10-27 01:10:31.025451-04:00
+2020-10-27 13:10:42,120 - __main__ - INFO - Starting log at 2020-10-27 13:10:42.120020
+2020-10-27 13:10:42,120 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:10:42,179 - __main__ - INFO - Connected
+2020-10-27 13:10:42,179 - __main__ - INFO - 
+2020-10-27 13:10:43,001 - __main__ - INFO - 
+2020-10-27 13:10:43,001 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:10:43,003 - __main__ - INFO - 
+2020-10-27 13:10:43,003 - __main__ - INFO - The market is now open 2020-10-27 01:10:43.003565-04:00
+2020-10-27 13:10:43,004 - __main__ - INFO - start_time = 1603775443.004085
+2020-10-27 13:13:52,372 - __main__ - INFO - Starting log at 2020-10-27 13:13:52.372129
+2020-10-27 13:13:52,372 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:13:52,404 - __main__ - INFO - Connected
+2020-10-27 13:13:52,405 - __main__ - INFO - 
+2020-10-27 13:13:53,201 - __main__ - INFO - 
+2020-10-27 13:13:53,202 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:13:53,203 - __main__ - INFO - 
+2020-10-27 13:13:53,204 - __main__ - INFO - The market is now open 2020-10-27 01:13:53.203452-04:00
+2020-10-27 13:13:53,205 - __main__ - INFO - time_since_open = -29766.794816970825, time.time() = 1603775633.205187, time_ref = 1603805400
+2020-10-27 13:15:35,738 - __main__ - INFO - Starting log at 2020-10-27 13:15:35.738226
+2020-10-27 13:15:35,739 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:15:35,783 - __main__ - INFO - Connected
+2020-10-27 13:15:35,784 - __main__ - INFO - 
+2020-10-27 13:15:36,479 - __main__ - INFO - 
+2020-10-27 13:15:36,481 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:15:36,485 - __main__ - INFO - 
+2020-10-27 13:15:36,487 - __main__ - INFO - The market is now open 2020-10-27 01:15:36.485762-04:00
+2020-10-27 13:15:36,489 - __main__ - INFO - time_since_open = -29663.51086497307, time.time() = 1603775736.489141, time_ref = 1603805400
+2020-10-27 13:15:36,489 - __main__ - INFO - bar = 1.851851851851852e+57 hours, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 13:16:48,237 - __main__ - INFO - Starting log at 2020-10-27 13:16:48.237583
+2020-10-27 13:16:48,238 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:16:48,272 - __main__ - INFO - Connected
+2020-10-27 13:16:48,272 - __main__ - INFO - 
+2020-10-27 13:16:49,085 - __main__ - INFO - 
+2020-10-27 13:16:49,086 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:16:49,089 - __main__ - INFO - 
+2020-10-27 13:16:49,089 - __main__ - INFO - The market is now open 2020-10-27 01:16:49.089021-04:00
+2020-10-27 13:16:49,091 - __main__ - INFO - hours = 1.851851851851852e+57, bar = 1.851851851851852e+57 hours
+2020-10-27 13:16:49,091 - __main__ - INFO - bar = 1.851851851851852e+57 hours, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 13:17:30,650 - __main__ - INFO - Starting log at 2020-10-27 13:17:30.650921
+2020-10-27 13:17:30,652 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:17:30,685 - __main__ - INFO - Connected
+2020-10-27 13:17:30,686 - __main__ - INFO - 
+2020-10-27 13:17:31,505 - __main__ - INFO - 
+2020-10-27 13:17:31,506 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:17:31,508 - __main__ - INFO - 
+2020-10-27 13:17:31,508 - __main__ - INFO - The market is now open 2020-10-27 01:17:31.508339-04:00
+2020-10-27 13:17:56,384 - __main__ - INFO - Starting log at 2020-10-27 13:17:56.384024
+2020-10-27 13:17:56,385 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:17:56,423 - __main__ - INFO - Connected
+2020-10-27 13:17:56,423 - __main__ - INFO - 
+2020-10-27 13:17:57,266 - __main__ - INFO - 
+2020-10-27 13:17:57,267 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:17:57,270 - __main__ - INFO - 
+2020-10-27 13:17:57,271 - __main__ - INFO - The market is now open 2020-10-27 01:17:57.270715-04:00
+2020-10-27 13:18:24,220 - __main__ - INFO - Starting log at 2020-10-27 13:18:24.220477
+2020-10-27 13:18:24,221 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:18:24,252 - __main__ - INFO - Connected
+2020-10-27 13:18:24,252 - __main__ - INFO - 
+2020-10-27 13:18:25,054 - __main__ - INFO - 
+2020-10-27 13:18:25,055 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:18:25,058 - __main__ - INFO - 
+2020-10-27 13:18:25,058 - __main__ - INFO - The market is now open 2020-10-27 01:18:25.058526-04:00
+2020-10-27 13:18:25,060 - __main__ - INFO - minutes = 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 13:18:25,060 - __main__ - INFO - bar = 1.851851851851852e+57 hours, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 13:21:53,037 - __main__ - INFO - Starting log at 2020-10-27 13:21:53.037126
+2020-10-27 13:21:53,038 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:21:53,087 - __main__ - INFO - Connected
+2020-10-27 13:21:53,087 - __main__ - INFO - 
+2020-10-27 13:21:53,911 - __main__ - INFO - 
+2020-10-27 13:21:53,911 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:21:53,915 - __main__ - INFO - 
+2020-10-27 13:21:53,915 - __main__ - INFO - The market is now open 2020-10-27 01:21:53.914997-04:00
+2020-10-27 13:22:01,971 - __main__ - INFO - Starting log at 2020-10-27 13:22:01.971212
+2020-10-27 13:22:01,971 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:22:02,029 - __main__ - INFO - Connected
+2020-10-27 13:22:02,029 - __main__ - INFO - 
+2020-10-27 13:22:02,825 - __main__ - INFO - 
+2020-10-27 13:22:02,825 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:22:02,827 - __main__ - INFO - 
+2020-10-27 13:22:02,827 - __main__ - INFO - The market is now open 2020-10-27 01:22:02.827040-04:00
+2020-10-27 13:22:02,828 - __main__ - INFO - bars_minutes = [111111111111111111111111111111111111111111111111111111111111]
+2020-10-27 13:22:02,829 - __main__ - INFO - minutes = 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 13:22:02,829 - __main__ - INFO - bar = 1.851851851851852e+57 hours, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 13:22:27,813 - __main__ - INFO - Starting log at 2020-10-27 13:22:27.813679
+2020-10-27 13:22:27,815 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:22:27,855 - __main__ - INFO - Connected
+2020-10-27 13:22:27,855 - __main__ - INFO - 
+2020-10-27 13:22:28,624 - __main__ - INFO - 
+2020-10-27 13:22:28,624 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:22:28,627 - __main__ - INFO - 
+2020-10-27 13:22:28,627 - __main__ - INFO - The market is now open 2020-10-27 01:22:28.627042-04:00
+2020-10-27 13:23:41,908 - __main__ - INFO - Starting log at 2020-10-27 13:23:41.908463
+2020-10-27 13:23:41,908 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 13:23:41,947 - __main__ - INFO - Connected
+2020-10-27 13:23:41,947 - __main__ - INFO - 
+2020-10-27 13:23:41,973 - __main__ - INFO - adding bar
+2020-10-27 13:23:42,754 - __main__ - INFO - 
+2020-10-27 13:23:42,754 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 13:23:42,757 - __main__ - INFO - 
+2020-10-27 13:23:42,758 - __main__ - INFO - The market is now open 2020-10-27 01:23:42.757719-04:00
+2020-10-27 21:15:55,907 - __main__ - INFO - Starting log at 2020-10-27 21:15:55.907501
+2020-10-27 21:15:55,909 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:15:56,042 - __main__ - INFO - Connected
+2020-10-27 21:15:56,043 - __main__ - INFO - 
+2020-10-27 21:15:56,092 - __main__ - INFO - adding bar
+2020-10-27 21:15:57,066 - __main__ - INFO - 
+2020-10-27 21:15:57,066 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:15:57,069 - __main__ - INFO - 
+2020-10-27 21:15:57,069 - __main__ - INFO - The market is now open 2020-10-27 09:15:57.069379-04:00
+2020-10-27 21:15:57,070 - __main__ - INFO - minutes = 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:15:57,070 - __main__ - INFO - bar = 1.851851851851852e+57 hours, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:18:00,261 - __main__ - INFO - Starting log at 2020-10-27 21:18:00.261903
+2020-10-27 21:18:00,266 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:18:00,323 - __main__ - INFO - Connected
+2020-10-27 21:18:00,323 - __main__ - INFO - 
+2020-10-27 21:18:00,355 - __main__ - INFO - adding bar
+2020-10-27 21:18:01,125 - __main__ - INFO - 
+2020-10-27 21:18:01,126 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:18:01,129 - __main__ - INFO - 
+2020-10-27 21:18:01,130 - __main__ - INFO - The market is now open 2020-10-27 09:18:01.129929-04:00
+2020-10-27 21:18:01,131 - __main__ - INFO - minutes = 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:18:01,132 - __main__ - INFO - bar = 1.851851851851852e+57 hours, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:18:18,752 - __main__ - INFO - Starting log at 2020-10-27 21:18:18.752537
+2020-10-27 21:18:18,753 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:18:18,794 - __main__ - INFO - Connected
+2020-10-27 21:18:18,794 - __main__ - INFO - 
+2020-10-27 21:18:18,810 - __main__ - INFO - adding bar
+2020-10-27 21:18:18,811 - __main__ - INFO - bar_minutes is now 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:18:19,882 - __main__ - INFO - 
+2020-10-27 21:18:19,882 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:18:19,885 - __main__ - INFO - 
+2020-10-27 21:18:19,885 - __main__ - INFO - The market is now open 2020-10-27 09:18:19.885577-04:00
+2020-10-27 21:18:19,887 - __main__ - INFO - minutes = 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:18:19,887 - __main__ - INFO - bar = 1.851851851851852e+57 hours, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:18:39,662 - __main__ - INFO - Starting log at 2020-10-27 21:18:39.662782
+2020-10-27 21:18:39,664 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:18:39,742 - __main__ - INFO - Connected
+2020-10-27 21:18:39,743 - __main__ - INFO - 
+2020-10-27 21:18:39,769 - __main__ - INFO - adding bar
+2020-10-27 21:18:39,769 - __main__ - INFO - bar_minutes is now 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:18:39,770 - __main__ - INFO - bar_minutes is now 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:18:40,798 - __main__ - INFO - 
+2020-10-27 21:18:40,798 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:18:40,801 - __main__ - INFO - 
+2020-10-27 21:18:40,802 - __main__ - INFO - The market is now open 2020-10-27 09:18:40.801784-04:00
+2020-10-27 21:18:40,803 - __main__ - INFO - minutes = 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:18:40,803 - __main__ - INFO - bar = 1.851851851851852e+57 hours, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:18:49,231 - __main__ - INFO - Starting log at 2020-10-27 21:18:49.231947
+2020-10-27 21:18:49,232 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:18:49,272 - __main__ - INFO - Connected
+2020-10-27 21:18:49,273 - __main__ - INFO - 
+2020-10-27 21:18:49,300 - __main__ - INFO - adding bar
+2020-10-27 21:19:51,858 - __main__ - INFO - Starting log at 2020-10-27 21:19:51.858364
+2020-10-27 21:19:51,859 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:19:51,910 - __main__ - INFO - Connected
+2020-10-27 21:19:51,910 - __main__ - INFO - 
+2020-10-27 21:19:51,942 - __main__ - INFO - adding bar
+2020-10-27 21:19:51,942 - __main__ - INFO - Adding 111111111111111111111111111111111111111111111111111111111111 to bar_minutes
+2020-10-27 21:19:51,942 - __main__ - INFO - bar_minutes is now 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:19:51,942 - __main__ - INFO - bar_minutes is now 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:19:52,679 - __main__ - INFO - 
+2020-10-27 21:19:52,679 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:19:52,682 - __main__ - INFO - 
+2020-10-27 21:19:52,682 - __main__ - INFO - The market is now open 2020-10-27 09:19:52.682491-04:00
+2020-10-27 21:19:52,684 - __main__ - INFO - minutes = 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:19:52,684 - __main__ - INFO - bar = 1.851851851851852e+57 hours, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:20:20,567 - __main__ - INFO - Starting log at 2020-10-27 21:20:20.567196
+2020-10-27 21:20:20,568 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:20:20,652 - __main__ - INFO - Connected
+2020-10-27 21:20:20,652 - __main__ - INFO - 
+2020-10-27 21:20:20,670 - __main__ - INFO - adding bar
+2020-10-27 21:20:20,670 - __main__ - INFO - bar is now 1 hour
+2020-10-27 21:20:20,671 - __main__ - INFO - bar_minutes is now 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:20:20,671 - __main__ - INFO - bar_minutes is now 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:20:21,617 - __main__ - INFO - 
+2020-10-27 21:20:21,617 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:20:21,620 - __main__ - INFO - 
+2020-10-27 21:20:21,620 - __main__ - INFO - The market is now open 2020-10-27 09:20:21.620251-04:00
+2020-10-27 21:20:21,621 - __main__ - INFO - minutes = 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:20:21,621 - __main__ - INFO - bar = 1.851851851851852e+57 hours, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:20:43,590 - __main__ - INFO - Starting log at 2020-10-27 21:20:43.590600
+2020-10-27 21:20:43,590 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:20:43,693 - __main__ - INFO - Connected
+2020-10-27 21:20:43,693 - __main__ - INFO - 
+2020-10-27 21:20:43,719 - __main__ - INFO - adding bar
+2020-10-27 21:20:43,720 - __main__ - INFO - bar is now 1 hour
+2020-10-27 21:20:43,720 - __main__ - INFO - bar_minutes is now 60
+2020-10-27 21:20:43,720 - __main__ - INFO - bar_minutes is now 60
+2020-10-27 21:20:44,715 - __main__ - INFO - 
+2020-10-27 21:20:44,715 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:20:44,717 - __main__ - INFO - 
+2020-10-27 21:20:44,717 - __main__ - INFO - The market is now open 2020-10-27 09:20:44.717463-04:00
+2020-10-27 21:20:44,719 - __main__ - INFO - minutes = 60
+2020-10-27 21:20:49,727 - __main__ - INFO - minutes = 60
+2020-10-27 21:20:54,728 - __main__ - INFO - minutes = 60
+2020-10-27 21:20:59,733 - __main__ - INFO - minutes = 60
+2020-10-27 21:21:04,735 - __main__ - INFO - minutes = 60
+2020-10-27 21:21:09,741 - __main__ - INFO - minutes = 60
+2020-10-27 21:21:39,249 - __main__ - INFO - Starting log at 2020-10-27 21:21:39.249602
+2020-10-27 21:21:39,249 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:21:39,318 - __main__ - INFO - Connected
+2020-10-27 21:21:39,319 - __main__ - INFO - 
+2020-10-27 21:21:39,345 - __main__ - INFO - adding bar
+2020-10-27 21:21:39,346 - __main__ - INFO - bar is now 1 hour
+2020-10-27 21:21:39,346 - __main__ - INFO - bar_minutes is now 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:21:39,347 - __main__ - INFO - bar_minutes is now 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:21:40,348 - __main__ - INFO - 
+2020-10-27 21:21:40,348 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:21:40,351 - __main__ - INFO - 
+2020-10-27 21:21:40,351 - __main__ - INFO - The market is now open 2020-10-27 09:21:40.351532-04:00
+2020-10-27 21:21:40,353 - __main__ - INFO - minutes = 111111111111111111111111111111111111111111111111111111111111
+2020-10-27 21:21:40,354 - __main__ - INFO - bar = 1.851851851851852e+57 hours, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:21:51,270 - __main__ - INFO - Starting log at 2020-10-27 21:21:51.270502
+2020-10-27 21:21:51,271 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:21:51,328 - __main__ - INFO - Connected
+2020-10-27 21:21:51,330 - __main__ - INFO - 
+2020-10-27 21:21:51,388 - __main__ - INFO - adding bar
+2020-10-27 21:21:51,389 - __main__ - INFO - bar is now 1 hour
+2020-10-27 21:21:51,389 - __main__ - INFO - bar_minutes is now 60
+2020-10-27 21:21:51,389 - __main__ - INFO - bar_minutes is now 60
+2020-10-27 21:21:52,369 - __main__ - INFO - 
+2020-10-27 21:21:52,370 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:21:52,373 - __main__ - INFO - 
+2020-10-27 21:21:52,373 - __main__ - INFO - The market is now open 2020-10-27 09:21:52.373121-04:00
+2020-10-27 21:21:52,375 - __main__ - INFO - minutes = 60
+2020-10-27 21:21:57,380 - __main__ - INFO - minutes = 60
+2020-10-27 21:22:02,381 - __main__ - INFO - minutes = 60
+2020-10-27 21:22:07,387 - __main__ - INFO - minutes = 60
+2020-10-27 21:22:12,392 - __main__ - INFO - minutes = 60
+2020-10-27 21:22:48,342 - __main__ - INFO - Starting log at 2020-10-27 21:22:48.342744
+2020-10-27 21:22:48,343 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:22:48,396 - __main__ - INFO - Connected
+2020-10-27 21:22:48,396 - __main__ - INFO - 
+2020-10-27 21:22:48,411 - __main__ - INFO - adding bar
+2020-10-27 21:22:49,313 - __main__ - INFO - 
+2020-10-27 21:22:49,314 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:22:49,318 - __main__ - INFO - 
+2020-10-27 21:22:49,318 - __main__ - INFO - The market is now open 2020-10-27 09:22:49.318483-04:00
+2020-10-27 21:22:49,320 - __main__ - INFO - minutes = 60
+2020-10-27 21:22:54,330 - __main__ - INFO - minutes = 60
+2020-10-27 21:22:59,332 - __main__ - INFO - minutes = 60
+2020-10-27 21:23:04,335 - __main__ - INFO - minutes = 60
+2020-10-27 21:23:54,166 - __main__ - INFO - Starting log at 2020-10-27 21:23:54.166102
+2020-10-27 21:23:54,166 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:23:54,235 - __main__ - INFO - Connected
+2020-10-27 21:23:54,235 - __main__ - INFO - 
+2020-10-27 21:23:55,226 - __main__ - INFO - 
+2020-10-27 21:23:55,227 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:23:55,232 - __main__ - INFO - 
+2020-10-27 21:23:55,233 - __main__ - INFO - The market is now open 2020-10-27 09:23:55.232676-04:00
+2020-10-27 21:23:55,234 - __main__ - INFO - minutes = 60
+2020-10-27 21:24:00,240 - __main__ - INFO - minutes = 60
+2020-10-27 21:24:35,307 - __main__ - INFO - Starting log at 2020-10-27 21:24:35.307060
+2020-10-27 21:24:35,307 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:24:35,369 - __main__ - INFO - Connected
+2020-10-27 21:24:35,369 - __main__ - INFO - 
+2020-10-27 21:24:36,388 - __main__ - INFO - 
+2020-10-27 21:24:36,389 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:24:36,393 - __main__ - INFO - 
+2020-10-27 21:24:36,393 - __main__ - INFO - The market is now open 2020-10-27 09:24:36.392997-04:00
+2020-10-27 21:25:06,628 - __main__ - INFO - Starting log at 2020-10-27 21:25:06.628371
+2020-10-27 21:25:06,628 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:25:06,727 - __main__ - INFO - Connected
+2020-10-27 21:25:06,728 - __main__ - INFO - 
+2020-10-27 21:25:07,756 - __main__ - INFO - 
+2020-10-27 21:25:07,756 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:25:07,768 - __main__ - INFO - 
+2020-10-27 21:25:07,770 - __main__ - INFO - The market is now open 2020-10-27 09:25:07.768677-04:00
+2020-10-27 21:25:07,785 - __main__ - INFO - NOT time to update bars! 292.21492886543274 is more than 5
+2020-10-27 21:25:12,806 - __main__ - INFO - NOT time to update bars! 287.19352197647095 is more than 5
+2020-10-27 21:25:17,811 - __main__ - INFO - NOT time to update bars! 282.18881583213806 is more than 5
+2020-10-27 21:25:22,817 - __main__ - INFO - NOT time to update bars! 277.18264603614807 is more than 5
+2020-10-27 21:25:27,821 - __main__ - INFO - NOT time to update bars! 272.17812609672546 is more than 5
+2020-10-27 21:25:32,828 - __main__ - INFO - NOT time to update bars! 267.1717948913574 is more than 5
+2020-10-27 21:25:37,833 - __main__ - INFO - NOT time to update bars! 262.1663601398468 is more than 5
+2020-10-27 21:25:42,838 - __main__ - INFO - NOT time to update bars! 257.1615309715271 is more than 5
+2020-10-27 21:25:58,552 - __main__ - INFO - Starting log at 2020-10-27 21:25:58.552531
+2020-10-27 21:25:58,552 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:25:58,662 - __main__ - INFO - Connected
+2020-10-27 21:25:58,662 - __main__ - INFO - 
+2020-10-27 21:25:59,808 - __main__ - INFO - 
+2020-10-27 21:25:59,808 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:25:59,813 - __main__ - INFO - 
+2020-10-27 21:25:59,814 - __main__ - INFO - The market is now open 2020-10-27 09:25:59.813447-04:00
+2020-10-27 21:25:59,816 - __main__ - INFO - Time to update bars! 0.1837470531463623 is less than or equal to 5
+2020-10-27 21:25:59,816 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:27:46,648 - __main__ - INFO - Starting log at 2020-10-27 21:27:46.648053
+2020-10-27 21:27:46,648 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:27:46,708 - __main__ - INFO - Connected
+2020-10-27 21:27:46,709 - __main__ - INFO - 
+2020-10-27 21:27:48,146 - __main__ - INFO - 
+2020-10-27 21:27:48,146 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:27:48,148 - __main__ - INFO - 
+2020-10-27 21:27:48,148 - __main__ - INFO - The market is now open 2020-10-27 09:27:48.148359-04:00
+2020-10-27 21:27:48,151 - __main__ - INFO - NOT time to update bars! 11.849052906036377 is more than 5
+2020-10-27 21:27:53,154 - __main__ - INFO - NOT time to update bars! 6.845632076263428 is more than 5
+2020-10-27 21:27:58,159 - __main__ - INFO - Time to update bars! 1.8403818607330322 is less than or equal to 5
+2020-10-27 21:27:58,159 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:27:58,376 - __main__ - INFO - bars is []
+2020-10-27 21:28:42,049 - __main__ - INFO - Starting log at 2020-10-27 21:28:42.049822
+2020-10-27 21:28:42,050 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:28:42,087 - __main__ - INFO - Connected
+2020-10-27 21:28:42,087 - __main__ - INFO - 
+2020-10-27 21:28:43,223 - __main__ - INFO - 
+2020-10-27 21:28:43,224 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:28:43,226 - __main__ - INFO - 
+2020-10-27 21:28:43,226 - __main__ - INFO - The market is now open 2020-10-27 09:28:43.226167-04:00
+2020-10-27 21:28:43,228 - __main__ - INFO - NOT time to update bars! 16.771914958953857 is more than 5
+2020-10-27 21:28:48,236 - __main__ - INFO - NOT time to update bars! 11.763113021850586 is more than 5
+2020-10-27 21:28:53,240 - __main__ - INFO - NOT time to update bars! 6.759149074554443 is more than 5
+2020-10-27 21:28:58,246 - __main__ - INFO - Time to update bars! 1.7536959648132324 is less than or equal to 5
+2020-10-27 21:28:58,247 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:28:58,470 - __main__ - INFO - bars is None
+2020-10-27 21:30:30,828 - __main__ - INFO - Starting log at 2020-10-27 21:30:30.828466
+2020-10-27 21:30:30,829 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:30:30,862 - __main__ - INFO - Connected
+2020-10-27 21:30:30,862 - __main__ - INFO - 
+2020-10-27 21:30:32,272 - __main__ - INFO - 
+2020-10-27 21:30:32,272 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:30:32,275 - __main__ - INFO - 
+2020-10-27 21:30:32,275 - __main__ - INFO - The market is now open 2020-10-27 09:30:32.275117-04:00
+2020-10-27 21:30:32,277 - __main__ - INFO - NOT time to update bars! 27.72240686416626 is more than 5
+2020-10-27 21:30:37,287 - __main__ - INFO - NOT time to update bars! 22.71251606941223 is more than 5
+2020-10-27 21:30:42,294 - __main__ - INFO - NOT time to update bars! 17.70589590072632 is more than 5
+2020-10-27 21:30:47,301 - __main__ - INFO - NOT time to update bars! 12.698793888092041 is more than 5
+2020-10-27 21:30:52,307 - __main__ - INFO - NOT time to update bars! 7.6924591064453125 is more than 5
+2020-10-27 21:30:57,311 - __main__ - INFO - Time to update bars! 2.6882359981536865 is less than or equal to 5
+2020-10-27 21:30:57,312 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:30:57,533 - __main__ - INFO - bars is None
+2020-10-27 21:32:24,924 - __main__ - INFO - Starting log at 2020-10-27 21:32:24.924863
+2020-10-27 21:32:24,925 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:32:24,977 - __main__ - INFO - Connected
+2020-10-27 21:32:24,977 - __main__ - INFO - 
+2020-10-27 21:32:26,189 - __main__ - INFO - 
+2020-10-27 21:32:26,190 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:32:26,192 - __main__ - INFO - 
+2020-10-27 21:32:26,192 - __main__ - INFO - The market is now open 2020-10-27 09:32:26.192557-04:00
+2020-10-27 21:32:26,194 - __main__ - INFO - NOT time to update bars! 33.80531883239746 is more than 5
+2020-10-27 21:32:31,202 - __main__ - INFO - NOT time to update bars! 28.79727005958557 is more than 5
+2020-10-27 21:32:36,204 - __main__ - INFO - NOT time to update bars! 23.79571795463562 is more than 5
+2020-10-27 21:32:41,207 - __main__ - INFO - NOT time to update bars! 18.792423963546753 is more than 5
+2020-10-27 21:32:46,214 - __main__ - INFO - NOT time to update bars! 13.785703897476196 is more than 5
+2020-10-27 21:32:51,220 - __main__ - INFO - NOT time to update bars! 8.779336929321289 is more than 5
+2020-10-27 21:32:56,226 - __main__ - INFO - Time to update bars! 3.7732269763946533 is less than or equal to 5
+2020-10-27 21:32:56,227 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:33:33,404 - __main__ - INFO - Starting log at 2020-10-27 21:33:33.403937
+2020-10-27 21:33:33,405 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:33:33,445 - __main__ - INFO - Connected
+2020-10-27 21:33:33,445 - __main__ - INFO - 
+2020-10-27 21:33:34,749 - __main__ - INFO - 
+2020-10-27 21:33:34,749 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 21:33:34,752 - __main__ - INFO - 
+2020-10-27 21:33:34,752 - __main__ - INFO - The market is now open 2020-10-27 09:33:34.752451-04:00
+2020-10-27 21:33:34,754 - __main__ - INFO - NOT time to update bars! 25.245517015457153 is more than 5
+2020-10-27 21:33:39,760 - __main__ - INFO - NOT time to update bars! 20.23925805091858 is more than 5
+2020-10-27 21:33:44,766 - __main__ - INFO - NOT time to update bars! 15.233464002609253 is more than 5
+2020-10-27 21:33:49,770 - __main__ - INFO - NOT time to update bars! 10.22971796989441 is more than 5
+2020-10-27 21:33:54,772 - __main__ - INFO - NOT time to update bars! 5.22782301902771 is more than 5
+2020-10-27 21:33:59,777 - __main__ - INFO - Time to update bars! 0.2229781150817871 is less than or equal to 5
+2020-10-27 21:33:59,777 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 21:34:00,000 - __main__ - INFO - bars is None
+2020-10-27 21:41:10,392 - __main__ - INFO - Starting log at 2020-10-27 21:41:10.392399
+2020-10-27 21:41:10,394 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:41:10,523 - __main__ - INFO - Connected
+2020-10-27 21:41:10,523 - __main__ - INFO - 
+2020-10-27 21:46:43,146 - __main__ - INFO - Starting log at 2020-10-27 21:46:43.146650
+2020-10-27 21:46:43,148 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 21:46:43,212 - __main__ - INFO - Connected
+2020-10-27 21:46:43,212 - __main__ - INFO - 
+2020-10-27 23:37:21,405 - __main__ - INFO - Starting log at 2020-10-27 23:37:21.405936
+2020-10-27 23:37:21,407 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:37:21,534 - __main__ - INFO - Connected
+2020-10-27 23:37:21,534 - __main__ - INFO - 
+2020-10-27 23:38:06,904 - __main__ - INFO - Starting log at 2020-10-27 23:38:06.904065
+2020-10-27 23:38:06,905 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:38:06,957 - __main__ - INFO - Connected
+2020-10-27 23:38:06,958 - __main__ - INFO - 
+2020-10-27 23:38:07,968 - __main__ - INFO - 
+2020-10-27 23:38:07,968 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 23:38:07,972 - __main__ - INFO - 
+2020-10-27 23:38:07,972 - __main__ - INFO - The market is now open 2020-10-27 11:38:07.972025-04:00
+2020-10-27 23:38:07,974 - __main__ - INFO - NOT time to update bars! 3112.0258638858795 is more than 5
+2020-10-27 23:38:12,979 - __main__ - INFO - NOT time to update bars! 3107.0205261707306 is more than 5
+2020-10-27 23:38:17,983 - __main__ - INFO - NOT time to update bars! 3102.0165910720825 is more than 5
+2020-10-27 23:38:27,939 - __main__ - INFO - Starting log at 2020-10-27 23:38:27.938966
+2020-10-27 23:38:27,940 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:38:27,993 - __main__ - INFO - Connected
+2020-10-27 23:38:27,993 - __main__ - INFO - 
+2020-10-27 23:38:29,095 - __main__ - INFO - 
+2020-10-27 23:38:29,096 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 23:38:29,105 - __main__ - INFO - 
+2020-10-27 23:38:29,105 - __main__ - INFO - The market is now open 2020-10-27 11:38:29.105601-04:00
+2020-10-27 23:38:29,109 - __main__ - INFO - NOT time to update bars! 30.89091992378235 is more than 5
+2020-10-27 23:38:34,118 - __main__ - INFO - NOT time to update bars! 25.881453037261963 is more than 5
+2020-10-27 23:38:39,122 - __main__ - INFO - NOT time to update bars! 20.878061056137085 is more than 5
+2020-10-27 23:38:44,126 - __main__ - INFO - NOT time to update bars! 15.873193979263306 is more than 5
+2020-10-27 23:38:49,129 - __main__ - INFO - NOT time to update bars! 10.870857954025269 is more than 5
+2020-10-27 23:38:54,133 - __main__ - INFO - NOT time to update bars! 5.866598844528198 is more than 5
+2020-10-27 23:38:59,139 - __main__ - INFO - Time to update bars! 0.8604691028594971 is less than or equal to 5
+2020-10-27 23:38:59,140 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 23:38:59,366 - __main__ - INFO - bars is None
+2020-10-27 23:40:06,222 - __main__ - INFO - Starting log at 2020-10-27 23:40:06.222711
+2020-10-27 23:40:06,222 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:40:06,263 - __main__ - INFO - Connected
+2020-10-27 23:40:06,264 - __main__ - INFO - 
+2020-10-27 23:40:07,282 - __main__ - INFO - 
+2020-10-27 23:40:07,282 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 23:40:07,285 - __main__ - INFO - 
+2020-10-27 23:40:07,285 - __main__ - INFO - The market is now open 2020-10-27 11:40:07.285722-04:00
+2020-10-27 23:40:07,286 - __main__ - INFO - NOT time to update bars! 52.71308898925781 is more than 5
+2020-10-27 23:40:12,294 - __main__ - INFO - NOT time to update bars! 47.70573115348816 is more than 5
+2020-10-27 23:40:17,299 - __main__ - INFO - NOT time to update bars! 42.70034694671631 is more than 5
+2020-10-27 23:40:22,301 - __main__ - INFO - NOT time to update bars! 37.69850397109985 is more than 5
+2020-10-27 23:43:16,125 - __main__ - INFO - Starting log at 2020-10-27 23:43:16.125018
+2020-10-27 23:43:16,125 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:43:16,203 - __main__ - INFO - Connected
+2020-10-27 23:43:16,203 - __main__ - INFO - 
+2020-10-27 23:43:16,261 - __main__ - INFO - Requesting data as instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD'), endDateTime = , durationStr = 1 D, barSizeSetting = 1 min
+2020-10-27 23:43:17,281 - __main__ - INFO - 
+2020-10-27 23:43:17,281 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 23:43:17,284 - __main__ - INFO - 
+2020-10-27 23:43:17,284 - __main__ - INFO - The market is now open 2020-10-27 11:43:17.284389-04:00
+2020-10-27 23:43:17,286 - __main__ - INFO - NOT time to update bars! 42.713624000549316 is more than 5
+2020-10-27 23:43:22,290 - __main__ - INFO - NOT time to update bars! 37.709551095962524 is more than 5
+2020-10-27 23:43:27,293 - __main__ - INFO - NOT time to update bars! 32.70679306983948 is more than 5
+2020-10-27 23:43:32,299 - __main__ - INFO - NOT time to update bars! 27.700709104537964 is more than 5
+2020-10-27 23:43:37,305 - __main__ - INFO - NOT time to update bars! 22.694272994995117 is more than 5
+2020-10-27 23:43:42,309 - __main__ - INFO - NOT time to update bars! 17.690617084503174 is more than 5
+2020-10-27 23:43:47,315 - __main__ - INFO - NOT time to update bars! 12.684278964996338 is more than 5
+2020-10-27 23:43:52,317 - __main__ - INFO - NOT time to update bars! 7.682494878768921 is more than 5
+2020-10-27 23:43:57,319 - __main__ - INFO - Time to update bars! 2.680793046951294 is less than or equal to 5
+2020-10-27 23:43:57,320 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 23:43:57,541 - __main__ - INFO - bars is None
+2020-10-27 23:45:19,817 - __main__ - INFO - Starting log at 2020-10-27 23:45:19.817553
+2020-10-27 23:45:19,817 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:45:19,821 - __main__ - INFO - Error in connecting to TWS!! Exiting...
+2020-10-27 23:45:19,821 - __main__ - INFO - <class 'ConnectionRefusedError'>
+2020-10-27 23:45:25,086 - __main__ - INFO - Starting log at 2020-10-27 23:45:25.086658
+2020-10-27 23:45:25,086 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:45:25,090 - __main__ - INFO - Error in connecting to TWS!! Exiting...
+2020-10-27 23:45:25,090 - __main__ - INFO - <class 'ConnectionRefusedError'>
+2020-10-27 23:47:50,746 - __main__ - INFO - Starting log at 2020-10-27 23:47:50.746421
+2020-10-27 23:47:50,746 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:47:54,775 - __main__ - INFO - Error in connecting to TWS!! Exiting...
+2020-10-27 23:47:54,776 - __main__ - INFO - <class 'asyncio.exceptions.TimeoutError'>
+2020-10-27 23:48:03,606 - __main__ - INFO - Starting log at 2020-10-27 23:48:03.606479
+2020-10-27 23:48:03,606 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:48:05,108 - __main__ - INFO - Connected
+2020-10-27 23:48:05,108 - __main__ - INFO - 
+2020-10-27 23:48:05,149 - __main__ - INFO - Requesting data as instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD'), endDateTime = , durationStr = 1 D, barSizeSetting = 1 min
+2020-10-27 23:48:07,285 - __main__ - INFO - 
+2020-10-27 23:48:07,285 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 23:48:07,289 - __main__ - INFO - 
+2020-10-27 23:48:07,289 - __main__ - INFO - The market is now open 2020-10-27 11:48:07.289198-04:00
+2020-10-27 23:48:07,291 - __main__ - INFO - NOT time to update bars! 52.70894694328308 is more than 5
+2020-10-27 23:48:12,295 - __main__ - INFO - NOT time to update bars! 47.704387187957764 is more than 5
+2020-10-27 23:48:17,296 - __main__ - INFO - NOT time to update bars! 42.70318007469177 is more than 5
+2020-10-27 23:48:22,303 - __main__ - INFO - NOT time to update bars! 37.69695591926575 is more than 5
+2020-10-27 23:48:27,307 - __main__ - INFO - NOT time to update bars! 32.6929669380188 is more than 5
+2020-10-27 23:48:32,311 - __main__ - INFO - NOT time to update bars! 27.688118934631348 is more than 5
+2020-10-27 23:48:37,315 - __main__ - INFO - NOT time to update bars! 22.684597969055176 is more than 5
+2020-10-27 23:48:42,319 - __main__ - INFO - NOT time to update bars! 17.68056011199951 is more than 5
+2020-10-27 23:48:47,325 - __main__ - INFO - NOT time to update bars! 12.674820184707642 is more than 5
+2020-10-27 23:48:52,329 - __main__ - INFO - NOT time to update bars! 7.670085191726685 is more than 5
+2020-10-27 23:48:57,332 - __main__ - INFO - Time to update bars! 2.6676061153411865 is less than or equal to 5
+2020-10-27 23:48:57,332 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 23:48:57,591 - __main__ - INFO - bars is None
+2020-10-27 23:50:27,064 - __main__ - INFO - Starting log at 2020-10-27 23:50:27.064835
+2020-10-27 23:50:27,065 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:50:27,133 - __main__ - INFO - Connected
+2020-10-27 23:50:27,133 - __main__ - INFO - 
+2020-10-27 23:50:27,161 - __main__ - INFO - Requesting data as instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD'), endDateTime = , durationStr = 1 D, barSizeSetting = 1 min
+2020-10-27 23:52:51,164 - __main__ - INFO - Starting log at 2020-10-27 23:52:51.164452
+2020-10-27 23:52:51,164 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:52:51,203 - __main__ - INFO - Connected
+2020-10-27 23:52:51,203 - __main__ - INFO - 
+2020-10-27 23:52:51,223 - __main__ - INFO - Requesting data as instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD'), endDateTime = , durationStr = 1 D, barSizeSetting = 1 min
+2020-10-27 23:54:24,229 - __main__ - INFO - Starting log at 2020-10-27 23:54:24.229502
+2020-10-27 23:54:24,229 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:54:24,285 - __main__ - INFO - Connected
+2020-10-27 23:54:24,285 - __main__ - INFO - 
+2020-10-27 23:54:24,303 - __main__ - INFO - Requesting data as instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD'), endDateTime = , durationStr = 1 D, barSizeSetting = 1 min
+2020-10-27 23:54:24,982 - __main__ - INFO - 
+2020-10-27 23:54:24,982 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 23:54:24,985 - __main__ - INFO - 
+2020-10-27 23:54:24,985 - __main__ - INFO - The market is now open 2020-10-27 11:54:24.985670-04:00
+2020-10-27 23:54:24,987 - __main__ - INFO - NOT time to update bars! 35.01241588592529 is more than 5
+2020-10-27 23:54:29,994 - __main__ - INFO - NOT time to update bars! 30.005582094192505 is more than 5
+2020-10-27 23:54:34,996 - __main__ - INFO - NOT time to update bars! 25.003602027893066 is more than 5
+2020-10-27 23:54:39,999 - __main__ - INFO - NOT time to update bars! 20.000075101852417 is more than 5
+2020-10-27 23:54:45,006 - __main__ - INFO - NOT time to update bars! 14.993935108184814 is more than 5
+2020-10-27 23:54:50,008 - __main__ - INFO - NOT time to update bars! 9.991451978683472 is more than 5
+2020-10-27 23:54:55,013 - __main__ - INFO - Time to update bars! 4.9862871170043945 is less than or equal to 5
+2020-10-27 23:54:55,014 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 23:54:55,220 - __main__ - INFO - bars is None
+2020-10-27 23:55:43,741 - __main__ - INFO - Starting log at 2020-10-27 23:55:43.741691
+2020-10-27 23:55:43,741 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-27 23:55:43,781 - __main__ - INFO - Connected
+2020-10-27 23:55:43,781 - __main__ - INFO - 
+2020-10-27 23:55:43,806 - __main__ - INFO - Requesting data as instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD'), endDateTime = , durationStr = 1 D, barSizeSetting = 1 min
+2020-10-27 23:55:44,570 - __main__ - INFO - 
+2020-10-27 23:55:44,571 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-27 23:55:44,572 - __main__ - INFO - 
+2020-10-27 23:55:44,572 - __main__ - INFO - The market is now open 2020-10-27 11:55:44.572411-04:00
+2020-10-27 23:55:44,573 - __main__ - INFO - NOT time to update bars! 15.42613697052002 is more than 5
+2020-10-27 23:55:49,580 - __main__ - INFO - NOT time to update bars! 10.41923189163208 is more than 5
+2020-10-27 23:55:54,586 - __main__ - INFO - NOT time to update bars! 5.4140119552612305 is more than 5
+2020-10-27 23:55:59,590 - __main__ - INFO - Time to update bars! 0.40979719161987305 is less than or equal to 5
+2020-10-27 23:55:59,590 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-27 23:55:59,808 - __main__ - INFO - bars is None
+2020-10-28 00:00:18,039 - __main__ - INFO - Starting log at 2020-10-28 00:00:18.039163
+2020-10-28 00:00:18,040 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 00:00:18,072 - __main__ - INFO - Connected
+2020-10-28 00:00:18,072 - __main__ - INFO - 
+2020-10-28 00:00:18,811 - __main__ - INFO - 
+2020-10-28 00:00:18,811 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 00:00:18,814 - __main__ - INFO - 
+2020-10-28 00:00:18,814 - __main__ - INFO - The market is now open 2020-10-27 12:00:18.814116-04:00
+2020-10-28 00:00:18,816 - __main__ - INFO - NOT time to update bars! 41.18399786949158 is more than 5
+2020-10-28 00:00:23,819 - __main__ - INFO - NOT time to update bars! 36.18039083480835 is more than 5
+2020-10-28 00:00:28,825 - __main__ - INFO - NOT time to update bars! 31.174358129501343 is more than 5
+2020-10-28 00:00:46,898 - __main__ - INFO - Starting log at 2020-10-28 00:00:46.898253
+2020-10-28 00:00:46,898 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 00:00:46,941 - __main__ - INFO - Connected
+2020-10-28 00:00:46,941 - __main__ - INFO - 
+2020-10-28 00:00:48,026 - __main__ - INFO - 
+2020-10-28 00:00:48,027 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 00:00:48,030 - __main__ - INFO - 
+2020-10-28 00:00:48,030 - __main__ - INFO - The market is now open 2020-10-27 12:00:48.029955-04:00
+2020-10-28 00:00:48,032 - __main__ - INFO - NOT time to update bars! 11.967489957809448 is more than 5
+2020-10-28 00:00:53,037 - __main__ - INFO - NOT time to update bars! 6.962667942047119 is more than 5
+2020-10-28 00:00:58,041 - __main__ - INFO - Time to update bars! 1.9590039253234863 is less than or equal to 5
+2020-10-28 00:00:58,041 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 00:00:58,530 - __main__ - INFO - bars is None
+2020-10-28 10:44:05,065 - __main__ - INFO - Starting log at 2020-10-28 10:44:05.065230
+2020-10-28 10:44:05,066 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 10:44:05,331 - __main__ - INFO - Connected
+2020-10-28 10:44:05,331 - __main__ - INFO - 
+2020-10-28 10:52:19,459 - __main__ - INFO - Starting log at 2020-10-28 10:52:19.459298
+2020-10-28 10:52:19,460 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 10:52:19,508 - __main__ - INFO - Connected
+2020-10-28 10:52:19,508 - __main__ - INFO - 
+2020-10-28 10:54:07,691 - __main__ - INFO - Starting log at 2020-10-28 10:54:07.691002
+2020-10-28 10:54:07,692 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 10:54:07,697 - __main__ - INFO - Error in connecting to TWS!! Exiting...
+2020-10-28 10:54:07,697 - __main__ - INFO - <class 'ConnectionRefusedError'>
+2020-10-28 10:56:08,192 - __main__ - INFO - Starting log at 2020-10-28 10:56:08.192584
+2020-10-28 10:56:08,193 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 10:56:12,211 - __main__ - INFO - Error in connecting to TWS!! Exiting...
+2020-10-28 10:56:12,211 - __main__ - INFO - <class 'asyncio.exceptions.TimeoutError'>
+2020-10-28 10:56:35,312 - __main__ - INFO - Starting log at 2020-10-28 10:56:35.312818
+2020-10-28 10:56:35,314 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 10:56:35,360 - __main__ - INFO - Connected
+2020-10-28 10:56:35,361 - __main__ - INFO - 
+2020-10-28 10:57:58,956 - __main__ - INFO - Starting log at 2020-10-28 10:57:58.956575
+2020-10-28 10:57:58,957 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 10:57:59,000 - __main__ - INFO - Connected
+2020-10-28 10:57:59,001 - __main__ - INFO - 
+2020-10-28 10:58:43,025 - __main__ - INFO - Starting log at 2020-10-28 10:58:43.025880
+2020-10-28 10:58:43,026 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 10:58:43,056 - __main__ - INFO - Connected
+2020-10-28 10:58:43,056 - __main__ - INFO - 
+2020-10-28 10:58:43,743 - __main__ - INFO - 
+2020-10-28 10:58:43,743 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 10:58:43,746 - __main__ - INFO - 
+2020-10-28 10:58:43,746 - __main__ - INFO - The market is now open 2020-10-27 22:58:43.746535-04:00
+2020-10-28 10:58:43,748 - __main__ - INFO - NOT time to update bars! 16.251492023468018 is more than 5
+2020-10-28 10:58:48,754 - __main__ - INFO - NOT time to update bars! 11.245300054550171 is more than 5
+2020-10-28 10:58:53,761 - __main__ - INFO - NOT time to update bars! 6.238816022872925 is more than 5
+2020-10-28 10:58:58,766 - __main__ - INFO - Time to update bars! 1.233288049697876 is less than or equal to 5
+2020-10-28 10:58:58,767 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 10:58:58,969 - __main__ - INFO - bars is None
+2020-10-28 11:19:43,132 - __main__ - INFO - Starting log at 2020-10-28 11:19:43.132497
+2020-10-28 11:19:43,133 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:19:43,182 - __main__ - INFO - Connected
+2020-10-28 11:19:43,182 - __main__ - INFO - 
+2020-10-28 11:19:43,888 - __main__ - INFO - 
+2020-10-28 11:19:43,889 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:19:43,892 - __main__ - INFO - 
+2020-10-28 11:19:43,892 - __main__ - INFO - The market is now open 2020-10-27 23:19:43.892149-04:00
+2020-10-28 11:19:43,894 - __main__ - INFO - NOT time to update bars! 16.105741024017334 is more than 5
+2020-10-28 11:19:48,899 - __main__ - INFO - NOT time to update bars! 11.10049295425415 is more than 5
+2020-10-28 11:19:53,905 - __main__ - INFO - NOT time to update bars! 6.094502925872803 is more than 5
+2020-10-28 11:19:58,908 - __main__ - INFO - Time to update bars! 1.0920069217681885 is less than or equal to 5
+2020-10-28 11:19:58,908 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:19:59,118 - __main__ - INFO - bars is None
+2020-10-28 11:20:47,255 - __main__ - INFO - Starting log at 2020-10-28 11:20:47.255434
+2020-10-28 11:20:47,255 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:20:47,302 - __main__ - INFO - Connected
+2020-10-28 11:20:47,302 - __main__ - INFO - 
+2020-10-28 11:20:47,326 - __main__ - INFO - instrument is Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:20:48,035 - __main__ - INFO - 
+2020-10-28 11:20:48,035 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:20:48,038 - __main__ - INFO - 
+2020-10-28 11:20:48,038 - __main__ - INFO - The market is now open 2020-10-27 23:20:48.037964-04:00
+2020-10-28 11:20:48,039 - __main__ - INFO - NOT time to update bars! 11.960806846618652 is more than 5
+2020-10-28 11:20:53,044 - __main__ - INFO - NOT time to update bars! 6.956028938293457 is more than 5
+2020-10-28 11:20:58,050 - __main__ - INFO - Time to update bars! 1.9498369693756104 is less than or equal to 5
+2020-10-28 11:20:58,050 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:20:58,256 - __main__ - INFO - bars is None
+2020-10-28 11:22:37,575 - __main__ - INFO - Starting log at 2020-10-28 11:22:37.575618
+2020-10-28 11:22:37,575 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:22:37,618 - __main__ - INFO - Connected
+2020-10-28 11:22:37,618 - __main__ - INFO - 
+2020-10-28 11:22:37,653 - __main__ - INFO - instrument is Forex('EURUSD', exchange='IDEALPRO')
+2020-10-28 11:22:38,339 - __main__ - INFO - 
+2020-10-28 11:22:38,339 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:22:38,342 - __main__ - INFO - 
+2020-10-28 11:22:38,342 - __main__ - INFO - The market is now open 2020-10-27 23:22:38.342562-04:00
+2020-10-28 11:22:38,344 - __main__ - INFO - NOT time to update bars! 21.655524015426636 is more than 5
+2020-10-28 11:22:43,350 - __main__ - INFO - NOT time to update bars! 16.650012016296387 is more than 5
+2020-10-28 11:22:48,353 - __main__ - INFO - NOT time to update bars! 11.646607875823975 is more than 5
+2020-10-28 11:22:53,360 - __main__ - INFO - NOT time to update bars! 6.639643907546997 is more than 5
+2020-10-28 11:22:58,362 - __main__ - INFO - Time to update bars! 1.637578010559082 is less than or equal to 5
+2020-10-28 11:22:58,362 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:22:58,571 - __main__ - INFO - bars is None
+2020-10-28 11:28:18,675 - __main__ - INFO - Starting log at 2020-10-28 11:28:18.675635
+2020-10-28 11:28:18,676 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:28:18,714 - __main__ - INFO - Connected
+2020-10-28 11:28:18,715 - __main__ - INFO - 
+2020-10-28 11:28:18,733 - __main__ - INFO - instrument is Forex('EURUSD', exchange='IDEALPRO')
+2020-10-28 11:28:19,707 - __main__ - INFO - 
+2020-10-28 11:28:19,707 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:28:19,711 - __main__ - INFO - 
+2020-10-28 11:28:19,711 - __main__ - INFO - The market is now open 2020-10-27 23:28:19.710990-04:00
+2020-10-28 11:28:19,712 - __main__ - INFO - NOT time to update bars! 40.2871470451355 is more than 5
+2020-10-28 11:28:24,719 - __main__ - INFO - NOT time to update bars! 35.280293226242065 is more than 5
+2020-10-28 11:28:29,723 - __main__ - INFO - NOT time to update bars! 30.276204109191895 is more than 5
+2020-10-28 11:28:34,730 - __main__ - INFO - NOT time to update bars! 25.269446849822998 is more than 5
+2020-10-28 11:28:39,735 - __main__ - INFO - NOT time to update bars! 20.26432514190674 is more than 5
+2020-10-28 11:28:44,738 - __main__ - INFO - NOT time to update bars! 15.261399984359741 is more than 5
+2020-10-28 11:28:49,745 - __main__ - INFO - NOT time to update bars! 10.2550048828125 is more than 5
+2020-10-28 11:28:54,748 - __main__ - INFO - NOT time to update bars! 5.251488924026489 is more than 5
+2020-10-28 11:28:59,754 - __main__ - INFO - Time to update bars! 0.24511408805847168 is less than or equal to 5
+2020-10-28 11:28:59,755 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:28:59,962 - __main__ - INFO - bars is None
+2020-10-28 11:30:15,221 - __main__ - INFO - Starting log at 2020-10-28 11:30:15.221195
+2020-10-28 11:30:15,222 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:30:15,267 - __main__ - INFO - Connected
+2020-10-28 11:30:15,268 - __main__ - INFO - 
+2020-10-28 11:30:15,283 - __main__ - INFO - instrument is Forex('EURUSD', exchange='IDEALPRO')
+2020-10-28 11:30:25,795 - __main__ - INFO - Starting log at 2020-10-28 11:30:25.795820
+2020-10-28 11:30:25,796 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:30:25,831 - __main__ - INFO - Connected
+2020-10-28 11:30:25,831 - __main__ - INFO - 
+2020-10-28 11:30:25,846 - __main__ - INFO - instrument is Forex('EURUSD', exchange='IDEALPRO')
+2020-10-28 11:30:26,506 - __main__ - INFO - 
+2020-10-28 11:30:26,506 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:30:26,509 - __main__ - INFO - 
+2020-10-28 11:30:26,510 - __main__ - INFO - The market is now open 2020-10-27 23:30:26.509852-04:00
+2020-10-28 11:30:26,511 - __main__ - INFO - NOT time to update bars! 33.4882550239563 is more than 5
+2020-10-28 11:30:31,518 - __main__ - INFO - NOT time to update bars! 28.481901168823242 is more than 5
+2020-10-28 11:30:36,521 - __main__ - INFO - NOT time to update bars! 23.47816491127014 is more than 5
+2020-10-28 11:30:41,525 - __main__ - INFO - NOT time to update bars! 18.47500491142273 is more than 5
+2020-10-28 11:30:46,531 - __main__ - INFO - NOT time to update bars! 13.468630075454712 is more than 5
+2020-10-28 11:30:51,536 - __main__ - INFO - NOT time to update bars! 8.463063955307007 is more than 5
+2020-10-28 11:30:56,543 - __main__ - INFO - Time to update bars! 3.457221031188965 is less than or equal to 5
+2020-10-28 11:30:56,543 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:30:56,751 - __main__ - INFO - bars is None
+2020-10-28 11:33:45,502 - __main__ - INFO - Starting log at 2020-10-28 11:33:45.502612
+2020-10-28 11:33:45,503 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:33:45,531 - __main__ - INFO - Connected
+2020-10-28 11:33:45,531 - __main__ - INFO - 
+2020-10-28 11:33:45,556 - __main__ - INFO - instrument is Forex('EURUSD', exchange='IDEALPRO')
+2020-10-28 11:33:45,823 - __main__ - INFO - 
+2020-10-28 11:33:45,823 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:33:45,825 - __main__ - INFO - 
+2020-10-28 11:33:45,826 - __main__ - INFO - The market is now open 2020-10-27 23:33:45.825907-04:00
+2020-10-28 11:33:45,827 - __main__ - INFO - NOT time to update bars! 14.172096014022827 is more than 5
+2020-10-28 11:33:50,834 - __main__ - INFO - NOT time to update bars! 9.165076971054077 is more than 5
+2020-10-28 11:33:55,841 - __main__ - INFO - Time to update bars! 4.1590189933776855 is less than or equal to 5
+2020-10-28 11:33:55,841 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:33:56,045 - __main__ - INFO - bars is None
+2020-10-28 11:48:21,494 - __main__ - INFO - Starting log at 2020-10-28 11:48:21.494396
+2020-10-28 11:48:21,495 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:48:21,535 - __main__ - INFO - Connected
+2020-10-28 11:48:21,535 - __main__ - INFO - 
+2020-10-28 11:48:21,571 - __main__ - INFO - instrument is Forex('EURUSD', exchange='IDEALPRO')
+2020-10-28 11:48:22,166 - __main__ - INFO - 
+2020-10-28 11:48:22,166 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:48:22,169 - __main__ - INFO - 
+2020-10-28 11:48:22,169 - __main__ - INFO - The market is now open 2020-10-27 23:48:22.169302-04:00
+2020-10-28 11:48:22,171 - __main__ - INFO - NOT time to update bars! 37.82849884033203 is more than 5
+2020-10-28 11:48:27,178 - __main__ - INFO - NOT time to update bars! 32.82134509086609 is more than 5
+2020-10-28 11:48:32,180 - __main__ - INFO - NOT time to update bars! 27.81981897354126 is more than 5
+2020-10-28 11:48:37,184 - __main__ - INFO - NOT time to update bars! 22.815237045288086 is more than 5
+2020-10-28 11:48:42,189 - __main__ - INFO - NOT time to update bars! 17.810362815856934 is more than 5
+2020-10-28 11:48:47,195 - __main__ - INFO - NOT time to update bars! 12.804785013198853 is more than 5
+2020-10-28 11:48:52,199 - __main__ - INFO - NOT time to update bars! 7.800519943237305 is more than 5
+2020-10-28 11:48:57,200 - __main__ - INFO - Time to update bars! 2.799269199371338 is less than or equal to 5
+2020-10-28 11:48:57,202 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:48:57,806 - __main__ - INFO - bars is                    date      open      high       low     close  volume  average  barCount
+0   2020-10-28 05:15:00  1.178370  1.178665  1.178275  1.178655      -1     -1.0        -1
+1   2020-10-28 05:16:00  1.178655  1.178775  1.178650  1.178750      -1     -1.0        -1
+2   2020-10-28 05:17:00  1.178750  1.178775  1.178665  1.178765      -1     -1.0        -1
+3   2020-10-28 05:18:00  1.178765  1.178965  1.178685  1.178865      -1     -1.0        -1
+4   2020-10-28 05:19:00  1.178865  1.178995  1.178655  1.178780      -1     -1.0        -1
+..                  ...       ...       ...       ...       ...     ...      ...       ...
+389 2020-10-28 11:44:00  1.177855  1.177855  1.177815  1.177855      -1     -1.0        -1
+390 2020-10-28 11:45:00  1.177855  1.177855  1.177800  1.177835      -1     -1.0        -1
+391 2020-10-28 11:46:00  1.177835  1.177855  1.177815  1.177830      -1     -1.0        -1
+392 2020-10-28 11:47:00  1.177830  1.177885  1.177820  1.177880      -1     -1.0        -1
+393 2020-10-28 11:48:00  1.177880  1.178000  1.177855  1.178000      -1     -1.0        -1
+
+[394 rows x 8 columns]
+2020-10-28 11:48:57,811 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 11:48:57,811 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 11:49:24,792 - __main__ - INFO - Starting log at 2020-10-28 11:49:24.792160
+2020-10-28 11:49:24,793 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:49:24,836 - __main__ - INFO - Connected
+2020-10-28 11:49:24,837 - __main__ - INFO - 
+2020-10-28 11:49:24,856 - __main__ - INFO - instrument is Forex('EURUSD', exchange='IDEALPRO')
+2020-10-28 11:49:25,477 - __main__ - INFO - 
+2020-10-28 11:49:25,477 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:49:25,479 - __main__ - INFO - 
+2020-10-28 11:49:25,479 - __main__ - INFO - The market is now open 2020-10-27 23:49:25.479730-04:00
+2020-10-28 11:49:25,480 - __main__ - INFO - NOT time to update bars! 34.519152879714966 is more than 5
+2020-10-28 11:49:30,485 - __main__ - INFO - NOT time to update bars! 29.51409888267517 is more than 5
+2020-10-28 11:49:35,487 - __main__ - INFO - NOT time to update bars! 24.513007164001465 is more than 5
+2020-10-28 11:49:40,494 - __main__ - INFO - NOT time to update bars! 19.50575590133667 is more than 5
+2020-10-28 11:49:45,500 - __main__ - INFO - NOT time to update bars! 14.499121904373169 is more than 5
+2020-10-28 11:49:50,504 - __main__ - INFO - NOT time to update bars! 9.495085000991821 is more than 5
+2020-10-28 11:49:55,511 - __main__ - INFO - Time to update bars! 4.488744020462036 is less than or equal to 5
+2020-10-28 11:49:55,511 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:49:55,926 - __main__ - INFO - bars is                    date      open      high       low     close  volume  average  barCount
+0   2020-10-28 05:15:00  1.178370  1.178665  1.178275  1.178655      -1     -1.0        -1
+1   2020-10-28 05:16:00  1.178655  1.178775  1.178650  1.178750      -1     -1.0        -1
+2   2020-10-28 05:17:00  1.178750  1.178775  1.178665  1.178765      -1     -1.0        -1
+3   2020-10-28 05:18:00  1.178765  1.178965  1.178685  1.178865      -1     -1.0        -1
+4   2020-10-28 05:19:00  1.178865  1.178995  1.178655  1.178780      -1     -1.0        -1
+..                  ...       ...       ...       ...       ...     ...      ...       ...
+390 2020-10-28 11:45:00  1.177855  1.177855  1.177800  1.177835      -1     -1.0        -1
+391 2020-10-28 11:46:00  1.177835  1.177855  1.177815  1.177830      -1     -1.0        -1
+392 2020-10-28 11:47:00  1.177830  1.177885  1.177820  1.177880      -1     -1.0        -1
+393 2020-10-28 11:48:00  1.177880  1.178015  1.177855  1.178010      -1     -1.0        -1
+394 2020-10-28 11:49:00  1.178010  1.178015  1.177950  1.177950      -1     -1.0        -1
+
+[395 rows x 8 columns]
+2020-10-28 11:49:55,928 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 11:49:55,928 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 11:50:28,889 - __main__ - INFO - Starting log at 2020-10-28 11:50:28.889716
+2020-10-28 11:50:28,889 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:50:28,927 - __main__ - INFO - Connected
+2020-10-28 11:50:28,928 - __main__ - INFO - 
+2020-10-28 11:50:28,967 - __main__ - INFO - instrument is Forex('EURUSD', exchange='IDEALPRO')
+2020-10-28 11:50:29,576 - __main__ - INFO - 
+2020-10-28 11:50:29,576 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:50:29,578 - __main__ - INFO - 
+2020-10-28 11:50:29,579 - __main__ - INFO - The market is now open 2020-10-27 23:50:29.578812-04:00
+2020-10-28 11:50:29,580 - __main__ - INFO - NOT time to update bars! 30.419179916381836 is more than 5
+2020-10-28 11:50:34,586 - __main__ - INFO - NOT time to update bars! 25.41370391845703 is more than 5
+2020-10-28 11:50:39,592 - __main__ - INFO - NOT time to update bars! 20.407937049865723 is more than 5
+2020-10-28 11:50:44,596 - __main__ - INFO - NOT time to update bars! 15.403743982315063 is more than 5
+2020-10-28 11:50:49,599 - __main__ - INFO - NOT time to update bars! 10.400651931762695 is more than 5
+2020-10-28 11:50:54,601 - __main__ - INFO - NOT time to update bars! 5.39864182472229 is more than 5
+2020-10-28 11:50:59,603 - __main__ - INFO - Time to update bars! 0.39656496047973633 is less than or equal to 5
+2020-10-28 11:50:59,603 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:51:00,181 - __main__ - INFO - bars is                    date      open      high       low     close  volume  average  barCount
+0   2020-10-28 05:15:00  1.178370  1.178665  1.178275  1.178655      -1     -1.0        -1
+1   2020-10-28 05:16:00  1.178655  1.178775  1.178650  1.178750      -1     -1.0        -1
+2   2020-10-28 05:17:00  1.178750  1.178775  1.178665  1.178765      -1     -1.0        -1
+3   2020-10-28 05:18:00  1.178765  1.178965  1.178685  1.178865      -1     -1.0        -1
+4   2020-10-28 05:19:00  1.178865  1.178995  1.178655  1.178780      -1     -1.0        -1
+..                  ...       ...       ...       ...       ...     ...      ...       ...
+391 2020-10-28 11:46:00  1.177835  1.177855  1.177815  1.177830      -1     -1.0        -1
+392 2020-10-28 11:47:00  1.177830  1.177885  1.177820  1.177880      -1     -1.0        -1
+393 2020-10-28 11:48:00  1.177880  1.178015  1.177855  1.178010      -1     -1.0        -1
+394 2020-10-28 11:49:00  1.178010  1.178015  1.177950  1.177950      -1     -1.0        -1
+395 2020-10-28 11:50:00  1.177950  1.177960  1.177920  1.177945      -1     -1.0        -1
+
+[396 rows x 8 columns]
+2020-10-28 11:51:00,184 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 11:51:00,185 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 11:51:30,415 - __main__ - INFO - Starting log at 2020-10-28 11:51:30.415540
+2020-10-28 11:51:30,415 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:51:30,465 - __main__ - INFO - Connected
+2020-10-28 11:51:30,465 - __main__ - INFO - 
+2020-10-28 11:51:31,088 - __main__ - INFO - 
+2020-10-28 11:51:31,088 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:51:31,090 - __main__ - INFO - 
+2020-10-28 11:51:31,091 - __main__ - INFO - The market is now open 2020-10-27 23:51:31.090916-04:00
+2020-10-28 11:51:31,092 - __main__ - INFO - NOT time to update bars! 28.90712285041809 is more than 5
+2020-10-28 11:51:36,098 - __main__ - INFO - NOT time to update bars! 23.901978015899658 is more than 5
+2020-10-28 11:51:41,102 - __main__ - INFO - NOT time to update bars! 18.89749813079834 is more than 5
+2020-10-28 11:51:46,104 - __main__ - INFO - NOT time to update bars! 13.895419836044312 is more than 5
+2020-10-28 11:51:51,107 - __main__ - INFO - NOT time to update bars! 8.892366170883179 is more than 5
+2020-10-28 11:51:56,114 - __main__ - INFO - Time to update bars! 3.885126829147339 is less than or equal to 5
+2020-10-28 11:51:56,115 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:51:56,695 - __main__ - INFO - bars is                    date      open      high       low     close  volume  average  barCount
+0   2020-10-28 05:15:00  1.178370  1.178665  1.178275  1.178655      -1     -1.0        -1
+1   2020-10-28 05:16:00  1.178655  1.178775  1.178650  1.178750      -1     -1.0        -1
+2   2020-10-28 05:17:00  1.178750  1.178775  1.178665  1.178765      -1     -1.0        -1
+3   2020-10-28 05:18:00  1.178765  1.178965  1.178685  1.178865      -1     -1.0        -1
+4   2020-10-28 05:19:00  1.178865  1.178995  1.178655  1.178780      -1     -1.0        -1
+..                  ...       ...       ...       ...       ...     ...      ...       ...
+392 2020-10-28 11:47:00  1.177830  1.177885  1.177820  1.177880      -1     -1.0        -1
+393 2020-10-28 11:48:00  1.177880  1.178015  1.177855  1.178010      -1     -1.0        -1
+394 2020-10-28 11:49:00  1.178010  1.178015  1.177950  1.177950      -1     -1.0        -1
+395 2020-10-28 11:50:00  1.177950  1.177960  1.177920  1.177945      -1     -1.0        -1
+396 2020-10-28 11:51:00  1.177945  1.177965  1.177945  1.177950      -1     -1.0        -1
+
+[397 rows x 8 columns]
+2020-10-28 11:51:56,699 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 11:51:56,700 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 11:52:48,441 - __main__ - INFO - Starting log at 2020-10-28 11:52:48.441489
+2020-10-28 11:52:48,442 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:52:48,492 - __main__ - INFO - Connected
+2020-10-28 11:52:48,493 - __main__ - INFO - 
+2020-10-28 11:52:49,320 - __main__ - INFO - 
+2020-10-28 11:52:49,320 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:52:49,323 - __main__ - INFO - 
+2020-10-28 11:52:49,323 - __main__ - INFO - The market is now open 2020-10-27 23:52:49.323595-04:00
+2020-10-28 11:52:49,325 - __main__ - INFO - NOT time to update bars! 10.674488067626953 is more than 5
+2020-10-28 11:52:54,330 - __main__ - INFO - NOT time to update bars! 5.66928505897522 is more than 5
+2020-10-28 11:52:59,334 - __main__ - INFO - Time to update bars! 0.6660048961639404 is less than or equal to 5
+2020-10-28 11:52:59,335 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:52:59,912 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 11:52:59,913 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 11:54:17,090 - __main__ - INFO - Starting log at 2020-10-28 11:54:17.090195
+2020-10-28 11:54:17,091 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:54:17,173 - __main__ - INFO - Connected
+2020-10-28 11:54:17,174 - __main__ - INFO - 
+2020-10-28 11:54:17,854 - __main__ - INFO - 
+2020-10-28 11:54:17,855 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:54:17,875 - __main__ - INFO - 
+2020-10-28 11:54:17,875 - __main__ - INFO - The market is now open 2020-10-27 23:54:17.875060-04:00
+2020-10-28 11:54:17,877 - __main__ - INFO - NOT time to update bars! 42.12297606468201 is more than 5
+2020-10-28 11:54:22,905 - __main__ - INFO - NOT time to update bars! 37.09446096420288 is more than 5
+2020-10-28 11:54:27,911 - __main__ - INFO - NOT time to update bars! 32.08856797218323 is more than 5
+2020-10-28 11:54:32,916 - __main__ - INFO - NOT time to update bars! 27.08364701271057 is more than 5
+2020-10-28 11:54:37,922 - __main__ - INFO - NOT time to update bars! 22.07800817489624 is more than 5
+2020-10-28 11:54:42,927 - __main__ - INFO - NOT time to update bars! 17.072434902191162 is more than 5
+2020-10-28 11:54:47,933 - __main__ - INFO - NOT time to update bars! 12.066573143005371 is more than 5
+2020-10-28 11:54:52,938 - __main__ - INFO - NOT time to update bars! 7.061614990234375 is more than 5
+2020-10-28 11:54:57,951 - __main__ - INFO - Time to update bars! 2.0481269359588623 is less than or equal to 5
+2020-10-28 11:54:57,952 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:54:58,945 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 11:54:58,946 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 11:56:07,683 - __main__ - INFO - Starting log at 2020-10-28 11:56:07.683072
+2020-10-28 11:56:07,683 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:56:07,733 - __main__ - INFO - Connected
+2020-10-28 11:56:07,734 - __main__ - INFO - 
+2020-10-28 11:56:08,356 - __main__ - INFO - 
+2020-10-28 11:56:08,356 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:56:08,359 - __main__ - INFO - 
+2020-10-28 11:56:08,359 - __main__ - INFO - The market is now open 2020-10-27 23:56:08.359031-04:00
+2020-10-28 11:56:08,361 - __main__ - INFO - NOT time to update bars! 51.638794898986816 is more than 5
+2020-10-28 11:56:13,367 - __main__ - INFO - NOT time to update bars! 46.63239812850952 is more than 5
+2020-10-28 11:56:18,371 - __main__ - INFO - NOT time to update bars! 41.62896203994751 is more than 5
+2020-10-28 11:56:23,374 - __main__ - INFO - NOT time to update bars! 36.62520909309387 is more than 5
+2020-10-28 11:56:28,378 - __main__ - INFO - NOT time to update bars! 31.621925830841064 is more than 5
+2020-10-28 11:56:33,383 - __main__ - INFO - NOT time to update bars! 26.616366147994995 is more than 5
+2020-10-28 11:56:38,387 - __main__ - INFO - NOT time to update bars! 21.6129469871521 is more than 5
+2020-10-28 11:56:43,389 - __main__ - INFO - NOT time to update bars! 16.61064600944519 is more than 5
+2020-10-28 11:56:48,395 - __main__ - INFO - NOT time to update bars! 11.60454511642456 is more than 5
+2020-10-28 11:56:53,399 - __main__ - INFO - NOT time to update bars! 6.600290060043335 is more than 5
+2020-10-28 11:56:58,406 - __main__ - INFO - Time to update bars! 1.5934457778930664 is less than or equal to 5
+2020-10-28 11:56:58,407 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:56:58,983 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 11:56:58,983 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 11:59:22,713 - __main__ - INFO - Starting log at 2020-10-28 11:59:22.713555
+2020-10-28 11:59:22,715 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 11:59:22,792 - __main__ - INFO - Connected
+2020-10-28 11:59:22,793 - __main__ - INFO - 
+2020-10-28 11:59:39,375 - __main__ - INFO - 
+2020-10-28 11:59:39,377 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 11:59:39,379 - __main__ - INFO - 
+2020-10-28 11:59:39,380 - __main__ - INFO - The market is now open 2020-10-27 23:59:39.379898-04:00
+2020-10-28 11:59:39,381 - __main__ - INFO - NOT time to update bars! 20.618714094161987 is more than 5
+2020-10-28 11:59:44,388 - __main__ - INFO - NOT time to update bars! 15.611548900604248 is more than 5
+2020-10-28 11:59:49,393 - __main__ - INFO - NOT time to update bars! 10.606874942779541 is more than 5
+2020-10-28 11:59:54,394 - __main__ - INFO - NOT time to update bars! 5.605623006820679 is more than 5
+2020-10-28 11:59:59,395 - __main__ - INFO - Time to update bars! 0.6044290065765381 is less than or equal to 5
+2020-10-28 11:59:59,395 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 11:59:59,961 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 11:59:59,962 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:07:22,270 - __main__ - INFO - Starting log at 2020-10-28 13:07:22.270905
+2020-10-28 13:07:22,272 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 13:07:22,400 - __main__ - INFO - Connected
+2020-10-28 13:07:22,400 - __main__ - INFO - 
+2020-10-28 13:07:24,843 - __main__ - INFO - 
+2020-10-28 13:07:24,843 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 13:07:24,846 - __main__ - INFO - 
+2020-10-28 13:07:24,846 - __main__ - INFO - The market is now open 2020-10-28 01:07:24.846371-04:00
+2020-10-28 13:07:24,848 - __main__ - INFO - NOT time to update bars! 35.15203881263733 is more than 5
+2020-10-28 13:07:29,850 - __main__ - INFO - NOT time to update bars! 30.14910888671875 is more than 5
+2020-10-28 13:07:34,856 - __main__ - INFO - NOT time to update bars! 25.1430881023407 is more than 5
+2020-10-28 13:07:39,860 - __main__ - INFO - NOT time to update bars! 20.139627933502197 is more than 5
+2020-10-28 13:07:44,863 - __main__ - INFO - NOT time to update bars! 15.136747121810913 is more than 5
+2020-10-28 13:07:49,868 - __main__ - INFO - NOT time to update bars! 10.131663799285889 is more than 5
+2020-10-28 13:07:54,872 - __main__ - INFO - NOT time to update bars! 5.12738299369812 is more than 5
+2020-10-28 13:07:59,874 - __main__ - INFO - Time to update bars! 0.12530303001403809 is less than or equal to 5
+2020-10-28 13:07:59,875 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 13:08:00,440 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 13:08:00,440 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:08:26,444 - __main__ - INFO - Starting log at 2020-10-28 13:08:26.444854
+2020-10-28 13:08:26,446 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 13:08:26,544 - __main__ - INFO - Connected
+2020-10-28 13:08:26,544 - __main__ - INFO - 
+2020-10-28 13:08:27,191 - __main__ - INFO - 
+2020-10-28 13:08:27,191 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 13:08:27,193 - __main__ - INFO - 
+2020-10-28 13:08:27,193 - __main__ - INFO - The market is now open 2020-10-28 01:08:27.193638-04:00
+2020-10-28 13:08:27,195 - __main__ - INFO - NOT time to update bars! 32.804518938064575 is more than 5
+2020-10-28 13:08:32,198 - __main__ - INFO - NOT time to update bars! 27.80151391029358 is more than 5
+2020-10-28 13:08:37,201 - __main__ - INFO - NOT time to update bars! 22.798693895339966 is more than 5
+2020-10-28 13:08:42,206 - __main__ - INFO - NOT time to update bars! 17.793132066726685 is more than 5
+2020-10-28 13:08:47,210 - __main__ - INFO - NOT time to update bars! 12.78932499885559 is more than 5
+2020-10-28 13:08:52,218 - __main__ - INFO - NOT time to update bars! 7.781429052352905 is more than 5
+2020-10-28 13:08:57,219 - __main__ - INFO - Time to update bars! 2.780097007751465 is less than or equal to 5
+2020-10-28 13:08:57,220 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 13:08:57,782 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 13:08:57,782 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:09:17,197 - __main__ - INFO - Starting log at 2020-10-28 13:09:17.197445
+2020-10-28 13:09:17,198 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 13:09:17,293 - __main__ - INFO - Connected
+2020-10-28 13:09:17,294 - __main__ - INFO - 
+2020-10-28 13:09:17,950 - __main__ - INFO - 
+2020-10-28 13:09:17,951 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 13:09:17,954 - __main__ - INFO - 
+2020-10-28 13:09:17,954 - __main__ - INFO - The market is now open 2020-10-28 01:09:17.954214-04:00
+2020-10-28 13:09:17,956 - __main__ - INFO - NOT time to update bars! 42.04381704330444 is more than 5
+2020-10-28 13:09:22,963 - __main__ - INFO - NOT time to update bars! 37.03607702255249 is more than 5
+2020-10-28 13:09:27,966 - __main__ - INFO - NOT time to update bars! 32.03310990333557 is more than 5
+2020-10-28 13:09:32,969 - __main__ - INFO - NOT time to update bars! 27.03043293952942 is more than 5
+2020-10-28 13:09:37,972 - __main__ - INFO - NOT time to update bars! 22.02768898010254 is more than 5
+2020-10-28 13:09:42,977 - __main__ - INFO - NOT time to update bars! 17.02253794670105 is more than 5
+2020-10-28 13:09:47,981 - __main__ - INFO - NOT time to update bars! 12.018969058990479 is more than 5
+2020-10-28 13:09:52,982 - __main__ - INFO - NOT time to update bars! 7.017704010009766 is more than 5
+2020-10-28 13:09:57,986 - __main__ - INFO - Time to update bars! 2.0131280422210693 is less than or equal to 5
+2020-10-28 13:09:57,987 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 13:09:59,040 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 13:09:59,042 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:09:59,042 - __main__ - INFO - Current Price is : 1.177945
+2020-10-28 13:10:13,439 - __main__ - INFO - Starting log at 2020-10-28 13:10:13.439178
+2020-10-28 13:10:13,440 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 13:10:13,484 - __main__ - INFO - Connected
+2020-10-28 13:10:13,484 - __main__ - INFO - 
+2020-10-28 13:10:14,157 - __main__ - INFO - 
+2020-10-28 13:10:14,158 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 13:10:14,161 - __main__ - INFO - 
+2020-10-28 13:10:14,161 - __main__ - INFO - The market is now open 2020-10-28 01:10:14.161427-04:00
+2020-10-28 13:10:14,163 - __main__ - INFO - NOT time to update bars! 45.83638906478882 is more than 5
+2020-10-28 13:10:19,167 - __main__ - INFO - NOT time to update bars! 40.83284306526184 is more than 5
+2020-10-28 13:10:24,172 - __main__ - INFO - NOT time to update bars! 35.82759094238281 is more than 5
+2020-10-28 13:10:29,177 - __main__ - INFO - NOT time to update bars! 30.822525024414062 is more than 5
+2020-10-28 13:10:34,181 - __main__ - INFO - NOT time to update bars! 25.81879186630249 is more than 5
+2020-10-28 13:10:39,185 - __main__ - INFO - NOT time to update bars! 20.814192056655884 is more than 5
+2020-10-28 13:10:44,192 - __main__ - INFO - NOT time to update bars! 15.807994842529297 is more than 5
+2020-10-28 13:10:49,195 - __main__ - INFO - NOT time to update bars! 10.804929971694946 is more than 5
+2020-10-28 13:10:54,198 - __main__ - INFO - NOT time to update bars! 5.801470041275024 is more than 5
+2020-10-28 13:10:59,203 - __main__ - INFO - Time to update bars! 0.7962050437927246 is less than or equal to 5
+2020-10-28 13:10:59,204 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 13:10:59,759 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 13:10:59,759 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:10:59,759 - __main__ - INFO - Current Price is : 1.177855
+2020-10-28 13:11:28,739 - __main__ - INFO - Starting log at 2020-10-28 13:11:28.739413
+2020-10-28 13:11:28,740 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 13:11:28,794 - __main__ - INFO - Connected
+2020-10-28 13:11:28,795 - __main__ - INFO - 
+2020-10-28 13:11:29,444 - __main__ - INFO - 
+2020-10-28 13:11:29,445 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 13:11:29,448 - __main__ - INFO - 
+2020-10-28 13:11:29,448 - __main__ - INFO - The market is now open 2020-10-28 01:11:29.447982-04:00
+2020-10-28 13:11:29,449 - __main__ - INFO - NOT time to update bars! 30.550842761993408 is more than 5
+2020-10-28 13:11:34,465 - __main__ - INFO - NOT time to update bars! 25.534677982330322 is more than 5
+2020-10-28 13:11:39,469 - __main__ - INFO - NOT time to update bars! 20.53041696548462 is more than 5
+2020-10-28 13:11:44,474 - __main__ - INFO - NOT time to update bars! 15.525285959243774 is more than 5
+2020-10-28 13:11:49,478 - __main__ - INFO - NOT time to update bars! 10.521620035171509 is more than 5
+2020-10-28 13:11:54,482 - __main__ - INFO - NOT time to update bars! 5.517163991928101 is more than 5
+2020-10-28 13:11:59,485 - __main__ - INFO - Time to update bars! 0.5149660110473633 is less than or equal to 5
+2020-10-28 13:11:59,485 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 13:12:00,037 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 13:12:00,038 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:12:00,038 - __main__ - INFO - Current Price is : 1.17776
+2020-10-28 13:12:05,043 - __main__ - INFO - NOT time to update bars! 54.95613217353821 is more than 5
+2020-10-28 13:12:10,050 - __main__ - INFO - NOT time to update bars! 49.94958209991455 is more than 5
+2020-10-28 13:12:15,056 - __main__ - INFO - NOT time to update bars! 44.94355297088623 is more than 5
+2020-10-28 13:12:20,058 - __main__ - INFO - NOT time to update bars! 39.9417998790741 is more than 5
+2020-10-28 13:12:25,059 - __main__ - INFO - NOT time to update bars! 34.9405779838562 is more than 5
+2020-10-28 13:12:30,065 - __main__ - INFO - NOT time to update bars! 29.93452215194702 is more than 5
+2020-10-28 13:12:35,068 - __main__ - INFO - NOT time to update bars! 24.93167996406555 is more than 5
+2020-10-28 13:12:40,072 - __main__ - INFO - NOT time to update bars! 19.92743706703186 is more than 5
+2020-10-28 13:12:45,075 - __main__ - INFO - NOT time to update bars! 14.924634218215942 is more than 5
+2020-10-28 13:12:50,082 - __main__ - INFO - NOT time to update bars! 9.918053150177002 is more than 5
+2020-10-28 13:12:55,088 - __main__ - INFO - Time to update bars! 4.911935091018677 is less than or equal to 5
+2020-10-28 13:12:55,088 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 13:12:55,681 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 13:12:55,681 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:12:55,681 - __main__ - INFO - Current Price is : 1.177825
+2020-10-28 13:13:00,683 - __main__ - INFO - NOT time to update bars! 59.316630125045776 is more than 5
+2020-10-28 13:13:05,686 - __main__ - INFO - NOT time to update bars! 54.31311297416687 is more than 5
+2020-10-28 13:13:10,689 - __main__ - INFO - NOT time to update bars! 49.31049180030823 is more than 5
+2020-10-28 13:13:15,695 - __main__ - INFO - NOT time to update bars! 44.3040771484375 is more than 5
+2020-10-28 13:13:20,702 - __main__ - INFO - NOT time to update bars! 39.29795002937317 is more than 5
+2020-10-28 13:13:25,705 - __main__ - INFO - NOT time to update bars! 34.294512033462524 is more than 5
+2020-10-28 13:13:30,708 - __main__ - INFO - NOT time to update bars! 29.291132926940918 is more than 5
+2020-10-28 13:13:35,714 - __main__ - INFO - NOT time to update bars! 24.285867929458618 is more than 5
+2020-10-28 13:13:40,720 - __main__ - INFO - NOT time to update bars! 19.279752016067505 is more than 5
+2020-10-28 13:13:45,723 - __main__ - INFO - NOT time to update bars! 14.27682089805603 is more than 5
+2020-10-28 13:13:50,724 - __main__ - INFO - NOT time to update bars! 9.275617122650146 is more than 5
+2020-10-28 13:13:55,730 - __main__ - INFO - Time to update bars! 4.269810914993286 is less than or equal to 5
+2020-10-28 13:13:55,730 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 13:13:56,355 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 13:13:56,355 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:13:56,356 - __main__ - INFO - Current Price is : 1.17782
+2020-10-28 13:14:01,358 - __main__ - INFO - NOT time to update bars! 58.641722202301025 is more than 5
+2020-10-28 13:14:06,364 - __main__ - INFO - NOT time to update bars! 53.635714054107666 is more than 5
+2020-10-28 13:14:11,369 - __main__ - INFO - NOT time to update bars! 48.63026785850525 is more than 5
+2020-10-28 13:14:16,374 - __main__ - INFO - NOT time to update bars! 43.62568712234497 is more than 5
+2020-10-28 13:14:21,380 - __main__ - INFO - NOT time to update bars! 38.61931586265564 is more than 5
+2020-10-28 13:14:26,385 - __main__ - INFO - NOT time to update bars! 33.61455011367798 is more than 5
+2020-10-28 13:14:31,388 - __main__ - INFO - NOT time to update bars! 28.61187982559204 is more than 5
+2020-10-28 13:14:36,390 - __main__ - INFO - NOT time to update bars! 23.609413146972656 is more than 5
+2020-10-28 13:14:41,397 - __main__ - INFO - NOT time to update bars! 18.6024169921875 is more than 5
+2020-10-28 13:14:46,404 - __main__ - INFO - NOT time to update bars! 13.59574294090271 is more than 5
+2020-10-28 13:14:51,409 - __main__ - INFO - NOT time to update bars! 8.590564012527466 is more than 5
+2020-10-28 13:14:56,411 - __main__ - INFO - Time to update bars! 3.588404893875122 is less than or equal to 5
+2020-10-28 13:14:56,412 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 13:14:57,048 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 13:14:57,048 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:14:57,049 - __main__ - INFO - Current Price is : 1.17782
+2020-10-28 13:15:02,057 - __main__ - INFO - NOT time to update bars! 57.942590951919556 is more than 5
+2020-10-28 13:15:07,081 - __main__ - INFO - NOT time to update bars! 52.918362855911255 is more than 5
+2020-10-28 13:15:12,090 - __main__ - INFO - NOT time to update bars! 47.90908694267273 is more than 5
+2020-10-28 13:15:17,096 - __main__ - INFO - NOT time to update bars! 42.90388798713684 is more than 5
+2020-10-28 13:15:22,099 - __main__ - INFO - NOT time to update bars! 37.900733947753906 is more than 5
+2020-10-28 13:15:27,105 - __main__ - INFO - NOT time to update bars! 32.89490604400635 is more than 5
+2020-10-28 13:15:32,111 - __main__ - INFO - NOT time to update bars! 27.888784885406494 is more than 5
+2020-10-28 13:15:37,113 - __main__ - INFO - NOT time to update bars! 22.88620901107788 is more than 5
+2020-10-28 13:15:42,116 - __main__ - INFO - NOT time to update bars! 17.88395380973816 is more than 5
+2020-10-28 13:15:47,117 - __main__ - INFO - NOT time to update bars! 12.882078886032104 is more than 5
+2020-10-28 13:15:52,121 - __main__ - INFO - NOT time to update bars! 7.878143072128296 is more than 5
+2020-10-28 13:15:57,128 - __main__ - INFO - Time to update bars! 2.8718771934509277 is less than or equal to 5
+2020-10-28 13:15:57,128 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 13:15:57,742 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 13:15:57,743 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:15:57,744 - __main__ - INFO - Current Price is : 1.177835
+2020-10-28 13:16:02,748 - __main__ - INFO - NOT time to update bars! 57.25152587890625 is more than 5
+2020-10-28 13:16:07,751 - __main__ - INFO - NOT time to update bars! 52.24817609786987 is more than 5
+2020-10-28 13:16:12,758 - __main__ - INFO - NOT time to update bars! 47.24184203147888 is more than 5
+2020-10-28 13:16:49,233 - __main__ - INFO - Starting log at 2020-10-28 13:16:49.233747
+2020-10-28 13:16:49,235 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 13:16:49,280 - __main__ - INFO - Connected
+2020-10-28 13:16:49,281 - __main__ - INFO - 
+2020-10-28 13:16:50,006 - __main__ - INFO - 
+2020-10-28 13:16:50,010 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 13:16:50,020 - __main__ - INFO - 
+2020-10-28 13:16:50,020 - __main__ - INFO - The market is now open 2020-10-28 01:16:50.020368-04:00
+2020-10-28 13:16:50,022 - __main__ - INFO - NOT time to update bars! 789.9775869846344 is more than 5
+2020-10-28 13:16:55,030 - __main__ - INFO - NOT time to update bars! 784.969085931778 is more than 5
+2020-10-28 13:17:00,032 - __main__ - INFO - NOT time to update bars! 779.9674050807953 is more than 5
+2020-10-28 13:24:33,700 - __main__ - INFO - Starting log at 2020-10-28 13:24:33.700438
+2020-10-28 13:24:33,701 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 13:24:33,748 - __main__ - INFO - Connected
+2020-10-28 13:24:33,748 - __main__ - INFO - 
+2020-10-28 13:24:34,385 - __main__ - INFO - 
+2020-10-28 13:24:34,385 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 13:24:34,388 - __main__ - INFO - 
+2020-10-28 13:24:34,388 - __main__ - INFO - The market is now open 2020-10-28 01:24:34.388203-04:00
+2020-10-28 13:24:59,404 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 13:24:59,995 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 13:24:59,995 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:24:59,996 - __main__ - INFO - Current Price is : 1.177815
+2020-10-28 13:25:55,046 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 13:25:55,678 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 13:25:55,679 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:25:55,679 - __main__ - INFO - Current Price is : 1.177845
+2020-10-28 13:26:55,717 - __main__ - INFO - bar = 1 min, instrument = Forex('EURUSD', conId=12087792, exchange='IDEALPRO', localSymbol='EUR.USD', tradingClass='EUR.USD')
+2020-10-28 13:26:56,339 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 13:26:56,340 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 13:26:56,340 - __main__ - INFO - Current Price is : 1.17781
+2020-10-28 14:00:16,367 - __main__ - INFO - Starting log at 2020-10-28 14:00:16.367189
+2020-10-28 14:00:16,372 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 14:00:20,400 - __main__ - INFO - Error in connecting to TWS!! Exiting...
+2020-10-28 14:00:20,400 - __main__ - INFO - <class 'asyncio.exceptions.TimeoutError'>
+2020-10-28 14:00:52,928 - __main__ - INFO - Starting log at 2020-10-28 14:00:52.928765
+2020-10-28 14:00:52,932 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 14:00:53,022 - __main__ - INFO - Connected
+2020-10-28 14:00:53,027 - __main__ - INFO - 
+2020-10-28 14:00:54,010 - __main__ - INFO - 
+2020-10-28 14:00:54,010 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 14:00:54,016 - __main__ - INFO - 
+2020-10-28 14:00:54,020 - __main__ - INFO - The market is now open 2020-10-28 02:00:54.016747-04:00
+2020-10-28 14:00:59,682 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:00:59,683 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:00:59,685 - __main__ - INFO - Current Price is : 1.178135
+2020-10-28 14:02:00,592 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:02:00,593 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:02:00,596 - __main__ - INFO - Current Price is : 1.17806
+2020-10-28 14:02:45,853 - __main__ - INFO - Starting log at 2020-10-28 14:02:45.853012
+2020-10-28 14:02:45,854 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 14:02:45,903 - __main__ - INFO - Connected
+2020-10-28 14:02:45,906 - __main__ - INFO - 
+2020-10-28 14:02:46,535 - __main__ - INFO - 
+2020-10-28 14:02:46,535 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 14:02:46,538 - __main__ - INFO - 
+2020-10-28 14:02:46,538 - __main__ - INFO - The market is now open 2020-10-28 02:02:46.538553-04:00
+2020-10-28 14:02:57,108 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:02:57,108 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:02:57,109 - __main__ - INFO - Current Price is : 1.17821
+2020-10-28 14:03:56,144 - __main__ - INFO - Starting log at 2020-10-28 14:03:56.144901
+2020-10-28 14:03:56,145 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 14:03:56,201 - __main__ - INFO - Connected
+2020-10-28 14:03:56,202 - __main__ - INFO - 
+2020-10-28 14:03:56,878 - __main__ - INFO - 
+2020-10-28 14:03:56,879 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 14:03:56,884 - __main__ - INFO - 
+2020-10-28 14:03:56,884 - __main__ - INFO - The market is now open 2020-10-28 02:03:56.884112-04:00
+2020-10-28 14:03:57,279 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:03:57,279 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:03:57,280 - __main__ - INFO - Current Price is : 1.17824, with RSI : 54.4777703203686
+2020-10-28 14:04:57,997 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:04:57,997 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:04:57,998 - __main__ - INFO - Current Price is : 1.17829, with RSI : 56.49122756501603
+2020-10-28 14:05:48,637 - __main__ - INFO - Starting log at 2020-10-28 14:05:48.637730
+2020-10-28 14:05:48,637 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 14:05:48,670 - __main__ - INFO - Connected
+2020-10-28 14:05:48,670 - __main__ - INFO - 
+2020-10-28 14:05:49,328 - __main__ - INFO - 
+2020-10-28 14:05:49,328 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 14:05:49,331 - __main__ - INFO - 
+2020-10-28 14:05:49,334 - __main__ - INFO - The market is now open 2020-10-28 02:05:49.331557-04:00
+2020-10-28 14:05:59,925 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:05:59,926 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:05:59,927 - __main__ - INFO - Current Price is : 1.178205, with RSI : 52.08363824427234
+2020-10-28 14:06:18,394 - __main__ - INFO - Starting log at 2020-10-28 14:06:18.394566
+2020-10-28 14:06:18,394 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 14:06:18,428 - __main__ - INFO - Connected
+2020-10-28 14:06:18,428 - __main__ - INFO - 
+2020-10-28 14:06:19,108 - __main__ - INFO - 
+2020-10-28 14:06:19,108 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 14:06:19,110 - __main__ - INFO - 
+2020-10-28 14:06:19,110 - __main__ - INFO - The market is now open 2020-10-28 02:06:19.110559-04:00
+2020-10-28 14:06:59,715 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:06:59,716 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:06:59,717 - __main__ - INFO - Current Price is : 1.178315, with RSI : 56.44043311496753
+2020-10-28 14:07:17,360 - __main__ - INFO - Starting log at 2020-10-28 14:07:17.360485
+2020-10-28 14:07:17,361 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 14:07:17,419 - __main__ - INFO - Connected
+2020-10-28 14:07:17,419 - __main__ - INFO - 
+2020-10-28 14:07:18,156 - __main__ - INFO - 
+2020-10-28 14:07:18,157 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 14:07:18,160 - __main__ - INFO - 
+2020-10-28 14:07:18,161 - __main__ - INFO - The market is now open 2020-10-28 02:07:18.160915-04:00
+2020-10-28 14:07:58,763 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:07:58,763 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:07:58,764 - __main__ - INFO - Current Price is : 1.17832, with RSI : 55.383954789056666
+2020-10-28 14:07:58,764 - __main__ - INFO - EUR SHORT ENTRY SIGNAL: price=1.17832,LL=True
+2020-10-28 14:11:12,372 - __main__ - INFO - Starting log at 2020-10-28 14:11:12.372168
+2020-10-28 14:11:12,373 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 14:11:12,409 - __main__ - INFO - Connected
+2020-10-28 14:11:12,410 - __main__ - INFO - 
+2020-10-28 14:11:13,070 - __main__ - INFO - 
+2020-10-28 14:11:13,070 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 14:11:13,078 - __main__ - INFO - 
+2020-10-28 14:11:13,079 - __main__ - INFO - The market is now open 2020-10-28 02:11:13.078885-04:00
+2020-10-28 14:11:58,669 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:11:58,670 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:11:58,670 - __main__ - INFO - Current Price is : 1.178325, with RSI : 55.01930106692893
+2020-10-28 14:11:58,670 - __main__ - INFO - EUR SHORT ENTRY SIGNAL: price=1.178325,LL=True
+2020-10-28 14:11:58,671 - __main__ - INFO - SELLING 0 units of EUR at MARKET
+2020-10-28 14:12:43,233 - __main__ - INFO - Starting log at 2020-10-28 14:12:43.233829
+2020-10-28 14:12:43,235 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 14:12:43,291 - __main__ - INFO - Connected
+2020-10-28 14:12:43,292 - __main__ - INFO - 
+2020-10-28 14:12:43,922 - __main__ - INFO - 
+2020-10-28 14:12:43,923 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 14:12:43,925 - __main__ - INFO - 
+2020-10-28 14:12:43,926 - __main__ - INFO - The market is now open 2020-10-28 02:12:43.925857-04:00
+2020-10-28 14:12:59,500 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:12:59,500 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:12:59,501 - __main__ - INFO - Current Price is : 1.178325, with RSI : 55.01930106692893
+2020-10-28 14:12:59,501 - __main__ - INFO - EUR SHORT ENTRY SIGNAL: price=1.178325,LL=True
+2020-10-28 14:12:59,501 - __main__ - INFO - SELLING 5 units of EUR at MARKET
+2020-10-28 14:14:00,143 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:14:00,143 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:14:00,144 - __main__ - INFO - Current Price is : 1.178215, with RSI : 49.313398561504
+2020-10-28 14:14:55,778 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:14:55,780 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:14:55,780 - __main__ - INFO - Current Price is : 1.17832, with RSI : 54.21080272417432
+2020-10-28 14:14:55,781 - __main__ - INFO - EUR SHORT ENTRY SIGNAL: price=1.17832,LL=True
+2020-10-28 14:14:55,781 - __main__ - INFO - SELLING 5 units of EUR at MARKET
+2020-10-28 14:15:56,438 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:15:56,439 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:15:56,440 - __main__ - INFO - Current Price is : 1.178365, with RSI : 56.16557420175531
+2020-10-28 14:15:56,440 - __main__ - INFO - EUR SHORT ENTRY SIGNAL: price=1.178365,LL=True
+2020-10-28 14:15:56,441 - __main__ - INFO - SELLING 5 units of EUR at MARKET
+2020-10-28 14:16:57,111 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 14:16:57,113 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 14:16:57,114 - __main__ - INFO - Current Price is : 1.17847, with RSI : 60.294547820451314
+2020-10-28 14:16:57,114 - __main__ - INFO - EUR SHORT ENTRY SIGNAL: price=1.17847,LL=True
+2020-10-28 14:16:57,114 - __main__ - INFO - SELLING 5 units of EUR at MARKET
+2020-10-28 17:17:41,971 - __main__ - INFO - Starting log at 2020-10-28 17:17:41.971694
+2020-10-28 17:17:41,973 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 17:17:42,197 - __main__ - INFO - Connected
+2020-10-28 17:17:42,198 - __main__ - INFO - 
+2020-10-28 17:17:43,741 - __main__ - INFO - 
+2020-10-28 17:17:43,741 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 17:17:43,744 - __main__ - INFO - 
+2020-10-28 17:17:43,744 - __main__ - INFO - The market is now open 2020-10-28 05:17:43.744255-04:00
+2020-10-28 17:17:59,568 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:18:00,019 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:18:00,019 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:18:00,020 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:18:55,893 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:18:56,556 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:18:56,557 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:18:56,560 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:19:57,391 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:19:57,953 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:19:57,954 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:19:57,954 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:19:57,955 - __main__ - INFO - GBP LONG ENTRY SIGNAL: price=135.3425, RSI=27.12631190323097
+2020-10-28 17:21:51,477 - __main__ - INFO - Starting log at 2020-10-28 17:21:51.477944
+2020-10-28 17:21:51,479 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 17:21:51,530 - __main__ - INFO - Connected
+2020-10-28 17:21:51,530 - __main__ - INFO - 
+2020-10-28 17:21:52,741 - __main__ - INFO - 
+2020-10-28 17:21:52,741 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 17:21:52,744 - __main__ - INFO - 
+2020-10-28 17:21:52,745 - __main__ - INFO - The market is now open 2020-10-28 05:21:52.744872-04:00
+2020-10-28 17:21:58,548 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:21:58,997 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:21:58,997 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:21:58,998 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:21:58,999 - __main__ - INFO - GBP LONG ENTRY SIGNAL: price=135.2985, RSI=24.075983032627562
+2020-10-28 17:21:58,999 - __main__ - INFO - BUYING 5 units of GBP at MARKET
+2020-10-28 17:22:59,892 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:23:00,376 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:23:00,376 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:23:00,376 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:23:00,377 - __main__ - INFO - GBP LONG ENTRY SIGNAL: price=135.321, RSI=28.73732441714526
+2020-10-28 17:23:00,377 - __main__ - INFO - BUYING 5 units of GBP at MARKET
+2020-10-28 17:23:56,103 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:23:56,768 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:23:56,768 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:23:56,768 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:23:56,769 - __main__ - INFO - GBP LONG ENTRY SIGNAL: price=135.284, RSI=26.033906239888495
+2020-10-28 17:23:56,769 - __main__ - INFO - BUYING 5 units of GBP at MARKET
+2020-10-28 17:24:20,629 - __main__ - INFO - Starting log at 2020-10-28 17:24:20.629256
+2020-10-28 17:24:20,630 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 17:24:20,699 - __main__ - INFO - Connected
+2020-10-28 17:24:20,699 - __main__ - INFO - 
+2020-10-28 17:24:22,223 - __main__ - INFO - 
+2020-10-28 17:24:22,224 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 17:24:22,233 - __main__ - INFO - 
+2020-10-28 17:24:22,235 - __main__ - INFO - The market is now open 2020-10-28 05:24:22.233613-04:00
+2020-10-28 17:24:57,896 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:24:58,334 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:24:58,334 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:24:58,335 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:24:58,335 - __main__ - INFO - GBP LONG ENTRY SIGNAL: price=135.2515, RSI=23.91724409926077
+2020-10-28 17:24:58,336 - __main__ - INFO - BUYING 5 units of GBP at MARKET
+2020-10-28 17:25:59,043 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:25:59,575 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:25:59,575 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:25:59,575 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:25:59,576 - __main__ - INFO - GBP LONG ENTRY SIGNAL: price=135.273, RSI=25.795424054114406
+2020-10-28 17:25:59,576 - __main__ - INFO - BUYING 5 units of GBP at MARKET
+2020-10-28 17:27:46,515 - __main__ - INFO - Starting log at 2020-10-28 17:27:46.515375
+2020-10-28 17:27:46,517 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-10-28 17:27:46,569 - __main__ - INFO - Connected
+2020-10-28 17:27:46,569 - __main__ - INFO - 
+2020-10-28 17:27:47,928 - __main__ - INFO - 
+2020-10-28 17:27:47,929 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-10-28 17:27:47,931 - __main__ - INFO - 
+2020-10-28 17:27:47,931 - __main__ - INFO - The market is now open 2020-10-28 05:27:47.931498-04:00
+2020-10-28 17:27:58,596 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:27:59,200 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:27:59,201 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:27:59,201 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:29:00,108 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:29:00,588 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:29:00,588 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:29:00,589 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:29:56,481 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:29:56,978 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:29:56,979 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:29:56,979 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:30:57,891 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:30:58,401 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:30:58,402 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:30:58,402 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:31:59,117 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:31:59,670 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:31:59,671 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:31:59,671 - __main__ - INFO - Current qty for GBP: 0
+2020-10-28 17:33:00,406 - __main__ - INFO - Updated EUR's 1 min df
+2020-10-28 17:33:00,908 - __main__ - INFO - Updated GBP's 1 min df
+2020-10-28 17:33:00,908 - __main__ - INFO - Current qty for EUR: 0
+2020-10-28 17:33:00,909 - __main__ - INFO - Current qty for GBP: 0
+2020-11-02 02:06:51,384 - __main__ - INFO - Starting log at 2020-11-02 02:06:51.384357
+2020-11-02 02:06:51,384 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-02 02:06:53,404 - __main__ - INFO - Error in connecting to TWS!! Exiting...
+2020-11-02 02:06:53,404 - __main__ - INFO - <class 'ConnectionRefusedError'>
+2020-11-02 02:07:28,505 - __main__ - INFO - Starting log at 2020-11-02 02:07:28.505781
+2020-11-02 02:07:28,505 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-02 02:07:30,523 - __main__ - INFO - Error in connecting to TWS!! Exiting...
+2020-11-02 02:07:30,523 - __main__ - INFO - <class 'ConnectionRefusedError'>
+2020-11-02 02:07:43,849 - __main__ - INFO - Starting log at 2020-11-02 02:07:43.849026
+2020-11-02 02:07:43,849 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-02 02:07:45,881 - __main__ - INFO - Error in connecting to TWS!! Exiting...
+2020-11-02 02:07:45,881 - __main__ - INFO - <class 'ConnectionRefusedError'>
+2020-11-02 02:08:08,348 - __main__ - INFO - Starting log at 2020-11-02 02:08:08.348428
+2020-11-02 02:08:08,348 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-02 02:08:08,396 - __main__ - INFO - Connected
+2020-11-02 02:08:08,396 - __main__ - INFO - 
+2020-11-02 02:08:54,352 - __main__ - INFO - Starting log at 2020-11-02 02:08:54.352392
+2020-11-02 02:08:54,352 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-02 02:08:54,361 - __main__ - INFO - Connected
+2020-11-02 02:08:54,364 - __main__ - INFO - 
+2020-11-02 02:08:55,616 - __main__ - INFO - 
+2020-11-02 02:08:55,617 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-11-02 02:08:55,618 - __main__ - INFO - 
+2020-11-02 02:08:55,618 - __main__ - INFO - The market is now open 2020-11-02 05:08:55.618349-05:00
+2020-11-02 02:08:56,034 - __main__ - INFO - Updated EUR's 1 min df
+2020-11-02 02:08:56,449 - __main__ - INFO - Updated GBP's 1 min df
+2020-11-02 02:08:56,449 - __main__ - INFO - Current qty for EUR: 0
+2020-11-02 02:08:56,450 - __main__ - INFO - Current qty for GBP: 0
+2020-11-02 02:09:57,161 - __main__ - INFO - Updated EUR's 1 min df
+2020-11-02 02:09:57,772 - __main__ - INFO - Updated GBP's 1 min df
+2020-11-02 02:09:57,773 - __main__ - INFO - Current qty for EUR: 0
+2020-11-02 02:09:57,773 - __main__ - INFO - Current qty for GBP: 0
+2020-11-03 17:23:08,921 - __main__ - INFO - Starting log at 2020-11-03 17:23:08.921523
+2020-11-03 17:23:08,921 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-03 17:23:08,974 - __main__ - INFO - Connected
+2020-11-03 17:23:08,975 - __main__ - INFO - 
+2020-11-03 17:23:11,470 - __main__ - INFO - 
+2020-11-03 17:23:11,470 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-11-03 17:23:11,503 - __main__ - INFO - 
+2020-11-03 17:23:11,504 - __main__ - INFO - The market is now open 2020-11-03 04:23:11.503257-05:00
+2020-11-03 17:25:25,154 - __main__ - INFO - Starting log at 2020-11-03 17:25:25.154907
+2020-11-03 17:25:25,154 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-03 17:25:25,162 - __main__ - INFO - Connected
+2020-11-03 17:25:25,162 - __main__ - INFO - 
+2020-11-03 17:25:26,379 - __main__ - INFO - 
+2020-11-03 17:25:26,379 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-11-03 17:25:26,380 - __main__ - INFO - 
+2020-11-03 17:25:26,380 - __main__ - INFO - The market is now open 2020-11-03 04:25:26.380867-05:00
+2020-11-03 17:28:44,253 - __main__ - INFO - Starting log at 2020-11-03 17:28:44.253996
+2020-11-03 17:28:44,253 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-03 17:28:44,261 - __main__ - INFO - Connected
+2020-11-03 17:28:44,261 - __main__ - INFO - 
+2020-11-03 17:29:00,857 - __main__ - INFO - Starting log at 2020-11-03 17:29:00.857369
+2020-11-03 17:29:00,857 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-03 17:29:00,864 - __main__ - INFO - Connected
+2020-11-03 17:29:00,865 - __main__ - INFO - 
+2020-11-03 17:29:13,309 - __main__ - INFO - Starting log at 2020-11-03 17:29:13.309782
+2020-11-03 17:29:13,309 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-03 17:29:13,315 - __main__ - INFO - Connected
+2020-11-03 17:29:13,316 - __main__ - INFO - 
+2020-11-03 17:30:49,663 - __main__ - INFO - Starting log at 2020-11-03 17:30:49.663836
+2020-11-03 17:30:49,663 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-03 17:30:49,669 - __main__ - INFO - Connected
+2020-11-03 17:30:49,670 - __main__ - INFO - 
+2020-11-03 17:30:59,318 - __main__ - INFO - Starting log at 2020-11-03 17:30:59.318546
+2020-11-03 17:30:59,319 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-03 17:30:59,326 - __main__ - INFO - Connected
+2020-11-03 17:30:59,326 - __main__ - INFO - 
+2020-11-03 17:31:24,754 - __main__ - INFO - Starting log at 2020-11-03 17:31:24.754806
+2020-11-03 17:31:24,755 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-03 17:31:24,761 - __main__ - INFO - Connected
+2020-11-03 17:31:24,762 - __main__ - INFO - 
+2020-11-03 17:31:25,987 - __main__ - INFO - 
+2020-11-03 17:31:25,988 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-11-03 17:31:25,989 - __main__ - INFO - 
+2020-11-03 17:31:25,989 - __main__ - INFO - The market is now open 2020-11-03 04:31:25.989903-05:00
+2020-11-03 17:33:03,083 - __main__ - INFO - Starting log at 2020-11-03 17:33:03.083389
+2020-11-03 17:33:03,083 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-03 17:33:03,089 - __main__ - INFO - Connected
+2020-11-03 17:33:03,090 - __main__ - INFO - 
+2020-11-03 17:33:04,369 - __main__ - INFO - 
+2020-11-03 17:33:04,387 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-11-03 17:33:04,388 - __main__ - INFO - 
+2020-11-03 17:33:04,388 - __main__ - INFO - The market is now open 2020-11-03 04:33:04.388722-05:00
+2020-11-04 17:36:23,336 - __main__ - INFO - Starting log at 2020-11-04 17:36:23.336345
+2020-11-04 17:36:23,374 - __main__ - INFO - Connecting to Interactive Brokers TWS...
+2020-11-04 17:36:23,385 - __main__ - INFO - Connected
+2020-11-04 17:36:23,385 - __main__ - INFO - 
+2020-11-04 17:36:24,719 - __main__ - INFO - 
+2020-11-04 17:36:24,719 - __main__ - INFO - Today's exchange hours are 1715-1700
+2020-11-04 17:36:24,721 - __main__ - INFO - 
+2020-11-04 17:36:24,722 - __main__ - INFO - The market is now open 2020-11-04 04:36:24.721681-05:00
