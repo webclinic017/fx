@@ -43,28 +43,29 @@ class IBAlgoStrategy(object):
         start_time = datetime.datetime.now(tz=pytz.timezone('Asia/Shanghai'))
         self.log('Beginning to run trading algorithm at {} HKT'
                  .format(start_time))
+
         for instrument in self.instruments:
             indicators = self.get_indicators(instrument)
-            positions = self.get_positions(instrument.localSymbol)
-            position_count = len(positions)
+            # position = self.get_position(instrument.localSymbol)
+            open_orders = self.get_open_orders(instrument.localSymbol)
+            order_count = len(open_orders)
             self.log('Currently in {} positions for instrument {}.'
-                     .format(position_count, instrument.localSymbol))
-            if position_count == 0:
+                     .format(order_count, instrument.localSymbol))
+            if order_count == 0:
                 self.place_initial_entry_orders(instrument, indicators)
-            elif position_count < 4:
+            elif order_count < 4:
                 # Place compound long orders
                 if self.is_long(instrument.localSymbol):
-                    i = 4 - position_count
+                    i = 4 - order_count
                     while i <= 4:
-                        # self.place_compound_long_order(instrument, indicators, "NULL")
+                        self.go_long(instrument, indicators, multiplier=i)
                         i += 1
                 # Place compound short orders
                 elif not self.is_long(instrument.localSymbol):
-                    i = 4 - position_count
+                    i = 4 - order_count
                     while i <= 4:
-                        # self.place_compound_short_order(instrument, indicators, "NULL")
+                        self.go_short(instrument, indicators, multiplier=i)
                         i += 1
-        self.log(self.ib.positions)
 
 ####################################################
     def connect(self):
@@ -92,19 +93,18 @@ class IBAlgoStrategy(object):
         print(msg)
 
 #####################################################
-    def get_positions(self, localSymbol):
-        """Returns the current quantity held for instrument"""
-        positions = []
+    def get_open_orders(self, localSymbol):
+        """Returns the number of unfilled parent orders open for a currency"""
+        orders = []
         self.ib.sleep(1)
-        for position in self.ib.reqCompletedOrders(apiOnly=False):
-            if position.contract.localSymbol == localSymbol:
-                if position.orderStatus.status == "Cancelled":
-                    pass
-                else:
-                    positions.append(position)
-                    # self.log('Found position for instrument {}: {}'
-                    #          .format(localSymbol, position))
-        return positions
+        for o in self.ib.openOrders():
+            if "." in o.ocaGroup:
+                instrument = o.ocaGroup[4:11]
+                if instrument == localSymbol:
+                    orders.append(o)
+                    self.log('Found order for instrument {}: {}'
+                             .format(localSymbol, o))
+        return orders
 
 #####################################################
     def add_instrument(self, instrument_type, ticker,
@@ -144,7 +144,7 @@ class IBAlgoStrategy(object):
         # Get position size in USD
         available_funds = self.get_available_funds()
         equity_at_risk = available_funds * 0.005
-        size_in_usd = int(round(equity_at_risk / sl_size, 2))
+        # size_in_usd = int(round(equity_at_risk / sl_size, 2))
 
         # Get position size as units of symbol
         if instrument.localSymbol == 'EUR.USD':
@@ -431,7 +431,7 @@ class IBAlgoStrategy(object):
 
 #####################################################
     def place_initial_entry_orders(self, instrument, indicators):
-        """Long initial entry"""
+        """Initial entry"""
         long_entry_attempts = self.go_long(instrument, indicators)
 
         short_entry_attempts = self.go_short(instrument, indicators)
