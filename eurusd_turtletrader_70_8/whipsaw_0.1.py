@@ -47,22 +47,23 @@ class IBAlgoStrategy(object):
         for instrument in self.instruments:
             indicators = self.get_indicators(instrument)
             order_count = len(self.get_open_orders(instrument.localSymbol))
-            position = self.get_cash_balance(instrument)
             if order_count == 0:
                 self.place_initial_entry_orders(instrument, indicators)
             elif order_count < 4:
-                # Place compound long orders
-                if self.is_long(instrument.localSymbol):
+                # Place compound long orders if in long position (>100 units)
+                if self.get_cash_balance(instrument) > 100:
                     i = 4 - order_count
                     while i <= 4:
                         self.go_long(instrument, indicators, multiplier=i)
                         i += 1
-                # Place compound short orders
-                elif not self.is_long(instrument.localSymbol):
+                    # TODO: update SL and exit child orders for filled orders
+                # Place compound short orders if in short position (<100 units)
+                elif self.get_cash_balance(instrument) < 100:
                     i = 4 - order_count
                     while i <= 4:
                         self.go_short(instrument, indicators, multiplier=i)
                         i += 1
+                    # TODO: update SL and exit child orders for filled orders
 
 ####################################################
     def connect(self):
@@ -216,7 +217,7 @@ class IBAlgoStrategy(object):
 
 #####################################################
     def go_short(self, instrument, indicators, *args, **kwargs):
-        """Place short order according to strategy with an offset from LTH"""
+        """Place short order according to strategy with an offset from LTL"""
         offset = kwargs.get('offset', 0)
         sl_size = kwargs.get('sl_size',
                              self.get_atr_multiple(instrument, indicators))
@@ -569,14 +570,6 @@ class IBAlgoStrategy(object):
         df.columns.values[11] = 'short_dcu'
         # self.log(df.tail())
         return df
-
-#####################################################
-    def is_long(self, localSymbol):
-        for position in self.ib.positions():
-            if position.contract.localSymbol == localSymbol:
-                if position.position > 0:
-                    return True
-        return False
 
 #####################################################
 # MAIN PROGRAMME:
