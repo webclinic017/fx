@@ -46,11 +46,8 @@ class IBAlgoStrategy(object):
 
         for instrument in self.instruments:
             indicators = self.get_indicators(instrument)
-            # position = self.get_position(instrument.localSymbol)
-            open_orders = self.get_open_orders(instrument.localSymbol)
-            order_count = len(open_orders)
-            self.log('Currently in {} positions for instrument {}.'
-                     .format(order_count, instrument.localSymbol))
+            order_count = len(self.get_open_orders(instrument.localSymbol))
+            position = self.get_cash_balance(instrument)
             if order_count == 0:
                 self.place_initial_entry_orders(instrument, indicators)
             elif order_count < 4:
@@ -102,8 +99,11 @@ class IBAlgoStrategy(object):
                 instrument = o.ocaGroup[4:11]
                 if instrument == localSymbol:
                     orders.append(o)
-                    self.log('Found order for instrument {}: {}'
-                             .format(localSymbol, o))
+                    self.log('Found order for instrument {}: {}{}'
+                             .format(localSymbol, o.action, o.totalQuantity))
+        order_count = len(orders)
+        self.log('Currently in {} positions for instrument {}.'
+                 .format(order_count, instrument.localSymbol))
         return orders
 
 #####################################################
@@ -133,8 +133,25 @@ class IBAlgoStrategy(object):
                 available_funds = float(account_values[i].value)
                 break
             i += 1
-        # self.log('Available funds (USD): {}'.format(available_funds))
+        self.log('Available funds: {} {}'.format(available_funds,
+                                                 account_values[i].currency))
         return available_funds
+
+#####################################################
+    def get_cash_balance(self, instrument):
+        """Returns current position for currency pair in units"""
+        account_values = self.ib.accountValues()
+        cash_balance = 0
+        i = 0
+        for value in account_values:
+            if account_values[i].tag == 'CashBalance' and \
+               account_values[i].currency == instrument.localSymbol[0:3]:
+                cash_balance = float(account_values[i].value)
+                break
+            i += 1
+        self.log("Current {} cash balance: {} units"
+                 .format(instrument.localSymbol[0:3], cash_balance))
+        return cash_balance
 
 #####################################################
     def set_position_size(self, instrument, indicators, sl_size):
@@ -201,10 +218,12 @@ class IBAlgoStrategy(object):
     def go_short(self, instrument, indicators, *args, **kwargs):
         """Place short order according to strategy with an offset from LTH"""
         offset = kwargs.get('offset', 0)
-        sl_size = self.get_atr_multiple(instrument, indicators)
-        total_quantity = self.set_position_size(instrument,
-                                                indicators,
-                                                sl_size)
+        sl_size = kwargs.get('sl_size',
+                             self.get_atr_multiple(instrument, indicators))
+        total_quantity = kwargs.get('total_quantity',
+                                    self.set_position_size(instrument,
+                                                           indicators,
+                                                           sl_size))
         long_term_low = self.adjust_for_price_increments(instrument,
                                                          indicators
                                                          ['long_dcl']
@@ -317,10 +336,12 @@ class IBAlgoStrategy(object):
     def go_long(self, instrument, indicators, *args, **kwargs):
         """Place long order according to strategy with an offset from LTH"""
         offset = kwargs.get('offset', 0)
-        sl_size = self.get_atr_multiple(instrument, indicators)
-        total_quantity = self.set_position_size(instrument,
-                                                indicators,
-                                                sl_size)
+        sl_size = kwargs.get('sl_size',
+                             self.get_atr_multiple(instrument, indicators))
+        total_quantity = kwargs.get('total_quantity',
+                                    self.set_position_size(instrument,
+                                                           indicators,
+                                                           sl_size))
         long_term_high = self.adjust_for_price_increments(instrument,
                                                           indicators
                                                           ['long_dcu']
@@ -432,9 +453,25 @@ class IBAlgoStrategy(object):
 #####################################################
     def place_initial_entry_orders(self, instrument, indicators):
         """Initial entry"""
-        long_entry_attempts = self.go_long(instrument, indicators)
 
-        short_entry_attempts = self.go_short(instrument, indicators)
+        sl_size = self.get_atr_multiple(instrument, indicators)
+        total_quantity = self.set_position_size(instrument,
+                                                indicators,
+                                                sl_size)
+
+        self.log("Placing long initial orders for instrument {}"
+                 .format(instrument.localSymbol))
+        long_entry_attempts = self.go_long(instrument,
+                                           indicators,
+                                           sl_size=sl_size,
+                                           total_quantity=total_quantity)
+
+        self.log("Placing short initial orders for instrument {}"
+                 .format(instrument.localSymbol))
+        short_entry_attempts = self.go_short(instrument,
+                                             indicators,
+                                             sl_size=sl_size,
+                                             total_quantity=total_quantity)
 
         self.ib.oneCancelsAll(orders=[long_entry_attempts[0],
                                       short_entry_attempts[0]],
@@ -484,18 +521,6 @@ class IBAlgoStrategy(object):
                                                price=price_condition)]
 
         return order
-
-#####################################################
-    def met_long_exit_condition(self):
-        return False
-
-#####################################################
-    def met_short_exit_condition(self):
-        return False
-
-#####################################################
-    def close_position(self):
-        pass
 
 #####################################################
     def get_open_trades(self, instrument):
