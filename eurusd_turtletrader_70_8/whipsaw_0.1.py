@@ -100,7 +100,7 @@ class IBAlgoStrategy(object):
                 instrument = o.ocaGroup[4:11]
                 if instrument == localSymbol:
                     orders.append(o)
-                    self.log('Found order for instrument {}: {}{}'
+                    self.log('Found order for instrument {}: {} {}'
                              .format(localSymbol, o.action, o.totalQuantity))
         order_count = len(orders)
         self.log('Currently in {} positions for instrument {}.'
