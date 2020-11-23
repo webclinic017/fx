@@ -45,24 +45,55 @@ class IBAlgoStrategy(object):
                  .format(start_time))
 
         for instrument in self.instruments:
+
+            # Basic Variable Setup
             indicators = self.get_indicators(instrument)
             order_count = len(self.get_open_orders(instrument.localSymbol))
-            if order_count == 0:
+            cash_balance = self.get_cash_balance(instrument)
+            completed_orders = 0
+            for o in self.ib.reqCompletedOrders(False):
+                if o.contract.localSymbol == instrument.localSymbol \
+                   and o.orderStatus.status == "Filled":
+                    completed_orders += 1
+
+            # Logic
+            self.log('Checking for any orders / trades for {}'
+                     .format(instrument.localSymbol))
+            self.log('Completed orders for {}: {}'.format(instrument.localSymbol, completed_orders))
+            if order_count == 0 and completed_orders == 0:
                 self.place_initial_entry_orders(instrument, indicators)
             elif order_count < 4:
                 # Place compound long orders if in long position (>100 units)
-                if self.get_cash_balance(instrument) > 100:
-                    i = 4 - order_count
-                    while i <= 4:
-                        self.go_long(instrument, indicators, multiplier=i)
+                self.log('Checking if cash balance for {} is nonzero...'
+                         .format(instrument.localSymbol))
+                if cash_balance > float(100):
+                    self.log('Currently long on {}. Placing compound orders.'
+                             .format(instrument.localSymbol))
+                    i = completed_orders
+                    while i < 4:
+                        for o in self.go_long(instrument,
+                                              indicators,
+                                              offset=i):
+                            self.ib.placeOrder(instrument, o)
+                            self.ib.sleep(1)
                         i += 1
+                    self.log('Placed {} long compound orders on {}.'
+                             .format(i, instrument.localSymbol))
                     # TODO: update SL and exit child orders for filled orders
                 # Place compound short orders if in short position (<100 units)
-                elif self.get_cash_balance(instrument) < 100:
-                    i = 4 - order_count
-                    while i <= 4:
-                        self.go_short(instrument, indicators, multiplier=i)
+                elif cash_balance < float(-100):
+                    self.log('Currently short on {}. Placing compound orders.'
+                             .format(instrument.localSymbol))
+                    i = completed_orders
+                    while i < 4:
+                        for o in self.go_short(instrument,
+                                               indicators,
+                                               offset=i):
+                            self.ib.placeOrder(instrument, o)
+                            self.ib.sleep(1)
                         i += 1
+                    self.log('Placed {} short compound orders on {}.'
+                             .format(i, instrument.localSymbol))
                     # TODO: update SL and exit child orders for filled orders
 
 ####################################################
@@ -103,8 +134,8 @@ class IBAlgoStrategy(object):
                     self.log('Found order for instrument {}: {} {}'
                              .format(localSymbol, o.action, o.totalQuantity))
         order_count = len(orders)
-        self.log('Currently in {} positions for instrument {}.'
-                 .format(order_count, instrument.localSymbol))
+        self.log('Currently in {} open orders for instrument {}.'
+                 .format(order_count, localSymbol))
         return orders
 
 #####################################################
@@ -195,7 +226,7 @@ class IBAlgoStrategy(object):
         indicators = self.get_indicators(instrument)
         volatility = indicators['atr'][(indicators.axes[0].stop - 1)]
         sl_size = self.adjust_for_price_increments(instrument,
-                                                   0.5 * volatility)
+                                                   multiplier * volatility)
         # self.log('Current ATR={}, sl={}'.format(volatility, sl_size))
         return sl_size
 
@@ -448,13 +479,11 @@ class IBAlgoStrategy(object):
                   long_entry_c,
                   long_sl_c,
                   long_exit_c]
-
         return orders
 
 #####################################################
     def place_initial_entry_orders(self, instrument, indicators):
         """Initial entry"""
-
         sl_size = self.get_atr_multiple(instrument, indicators)
         total_quantity = self.set_position_size(instrument,
                                                 indicators,
