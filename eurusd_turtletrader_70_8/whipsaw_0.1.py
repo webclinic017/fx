@@ -48,7 +48,16 @@ class IBAlgoStrategy(object):
 
             # Basic Variable Setup
             indicators = self.get_indicators(instrument)
-            order_count = len(self.get_open_orders(instrument.localSymbol))
+
+            open_parents = []
+            open_children = []
+            for o in self.get_open_trades(instrument):
+                if o.order.parentId == 0:
+                    open_parents.append(o)
+                else:
+                    open_children.append(o)
+
+            open_parent_count = len(open_parents)
             cash_balance = self.get_cash_balance(instrument)
             completed_orders = 0
             for o in self.ib.reqCompletedOrders(False):
@@ -59,17 +68,28 @@ class IBAlgoStrategy(object):
             # Logic
             self.log('Checking for any orders / trades for {}'
                      .format(instrument.localSymbol))
-            self.log('Completed orders for {}: {}'.format(instrument.localSymbol, completed_orders))
-            if order_count == 0 and completed_orders == 0:
+            self.log('Completed orders for {}: {}'
+                     .format(instrument.localSymbol, completed_orders))
+            if open_parent_count == 0 and completed_orders == 0:
                 self.place_initial_entry_orders(instrument, indicators)
-            elif order_count < 4:
+            elif open_parent_count < 4:
+
+                # Cancel extra child orders:
+                if completed_orders > 0:
+                    for o in open_children:
+                        self.log("Found open order with parent id = {}"
+                                .format(o.order.parentId))
+                        self.ib.cancelOrder(o.order)
+
                 # Place compound long orders if in long position (>100 units)
                 self.log('Checking if cash balance for {} is nonzero...'
                          .format(instrument.localSymbol))
+                i = completed_orders + open_parent_count
                 if cash_balance > float(100):
+                    
+                    # Place compound long orders
                     self.log('Currently long on {}. Placing compound orders.'
                              .format(instrument.localSymbol))
-                    i = completed_orders
                     while i < 4:
                         for o in self.go_long(instrument,
                                               indicators,
@@ -79,12 +99,23 @@ class IBAlgoStrategy(object):
                         i += 1
                     self.log('Placed {} long compound orders on {}.'
                              .format(i, instrument.localSymbol))
-                    # TODO: update SL and exit child orders for filled orders
+
+                    # Check if SL / Exit positions are in place for both
+                    # compound and initial positions and if not, add them!
+                    if len(self.get_open_trades(instrument)) > 0:
+                        pass
+                        # TODO: Update price conditions
+                        # self.update_price_conditions(
+                        #    self.get_open_trades(instrument))
+                    else:
+                        pass
+                        # TODO: Place stop loss for existing filled trades
+                        # TODO: Place exit condition for existing filled trades
+
                 # Place compound short orders if in short position (<100 units)
                 elif cash_balance < float(-100):
                     self.log('Currently short on {}. Placing compound orders.'
                              .format(instrument.localSymbol))
-                    i = completed_orders
                     while i < 4:
                         for o in self.go_short(instrument,
                                                indicators,
@@ -94,7 +125,18 @@ class IBAlgoStrategy(object):
                         i += 1
                     self.log('Placed {} short compound orders on {}.'
                              .format(i, instrument.localSymbol))
-                    # TODO: update SL and exit child orders for filled orders
+
+                    # Check if SL / Exit positions are in place for both
+                    # compound and initial positions and if not, add them!
+                    if len(self.get_open_trades(instrument)) > 0:
+                        pass
+                        # TODO: Update price conditions
+                        # self.update_price_conditions(
+                        #    self.get_open_trades(instrument))
+                    else:
+                        pass
+                        # TODO: Place stop loss for existing filled trades
+                        # TODO: Place exit condition for existing filled trades
 
 ####################################################
     def connect(self):
@@ -122,20 +164,20 @@ class IBAlgoStrategy(object):
         print(msg)
 
 #####################################################
-    def get_open_orders(self, localSymbol):
-        """Returns the number of unfilled parent orders open for a currency"""
+    def get_open_trades(self, instrument):
+        """Returns the number of unfilled trades open for a currency"""
         orders = []
         self.ib.sleep(1)
-        for o in self.ib.openOrders():
-            if "." in o.ocaGroup:
-                instrument = o.ocaGroup[4:11]
-                if instrument == localSymbol:
-                    orders.append(o)
-                    self.log('Found order for instrument {}: {} {}'
-                             .format(localSymbol, o.action, o.totalQuantity))
+        for t in self.ib.openTrades():
+            if t.contract.localSymbol == instrument.localSymbol:
+                orders.append(t)
+                self.log('Found order for instrument {}: {} {}'
+                         .format(instrument.localSymbol,
+                                 t.order.action,
+                                 t.order.totalQuantity))
         order_count = len(orders)
         self.log('Currently in {} open orders for instrument {}.'
-                 .format(order_count, localSymbol))
+                 .format(order_count, instrument.localSymbol))
         return orders
 
 #####################################################
@@ -365,6 +407,11 @@ class IBAlgoStrategy(object):
         return orders
 
 #####################################################
+    def place_stop_for_filled_trade(self, instrument, trade, indicators):
+        """Place stop for a trade that has already been filled"""
+        total_quantity = trade.order.totalQuantity
+
+#####################################################
     def go_long(self, instrument, indicators, *args, **kwargs):
         """Place long order according to strategy with an offset from LTH"""
         offset = kwargs.get('offset', 0)
@@ -551,17 +598,6 @@ class IBAlgoStrategy(object):
                                                price=price_condition)]
 
         return order
-
-#####################################################
-    def get_open_trades(self, instrument):
-        """Returns a dataframe of all open trades"""
-        self.ib.sleep(1)
-        trades = []
-        for trade in self.ib.openTrades():
-            if trade.contract.localSymbol == instrument.localSymbol:
-                trades.append(trade.dict())
-        df = pd.DataFrame(trades)
-        return df
 
 #####################################################
     def get_indicators(self, instrument):
