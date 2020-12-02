@@ -66,7 +66,12 @@ class IBAlgoStrategy(object):
             if cash_balance < float(-100):
                 is_short = True
 
+            current_unit = round(self.get_cash_balance(instrument) * self.get_atr_multiple(instrument, indicators, multiplier=0.5) * self.get_base_exchange(instrument))
+            self.log('Currently risking {} base currency on {}'.format(current_unit, instrument.localSymbol))
             if abs(self.get_cash_balance(instrument)
+               * self.get_atr_multiple(instrument,
+                                       indicators,
+                                       multiplier=0.5)
                * self.get_base_exchange(instrument)) < \
                max_unit_size:
                 if is_long or is_short:
@@ -86,22 +91,31 @@ class IBAlgoStrategy(object):
             if not unit_full:
 
                 # Purge outdated/uneeded open orders:
-                self.clean_orders(instrument)
+                clean_stops = self.clean_orders(instrument)
 
                 # Check if long or short:
                 self.log('Checking if long or short for {}...'
                          .format(instrument.localSymbol))
 
                 if abs(self.get_cash_balance(instrument)
-                   * self.get_base_exchange(instrument)) < \
+                       * self.get_base_exchange(instrument)
+                       * self.get_atr_multiple(instrument,
+                                               indicators,
+                                               multiplier=0.5)) < \
                    max_unit_size * float(0.25):
                     i = 1
                 elif abs(self.get_cash_balance(instrument)
-                         * self.get_base_exchange(instrument)) < \
+                         * self.get_base_exchange(instrument)
+                         * self.get_atr_multiple(instrument,
+                                                 indicators,
+                                                 multiplier=0.5)) < \
                         max_unit_size * float(0.5):
                     i = 2
                 elif abs(self.get_cash_balance(instrument)
-                         * self.get_base_exchange(instrument)) < \
+                         * self.get_base_exchange(instrument)
+                         * self.get_atr_multiple(instrument,
+                                                 indicators,
+                                                 multiplier=0.5)) < \
                         max_unit_size * float(0.75):
                     i = 3
                 else:
@@ -110,11 +124,11 @@ class IBAlgoStrategy(object):
                 self.log("For instrument {}, i={}"
                          .format(instrument.localSymbol, i))
 
-                # If long (>100 units), place compound long orders:
+                # If long (>100 units), place compound long orders and exit orders:
                 if is_long:
                     self.log('Currently long on {}. Placing compound orders.'
                              .format(instrument.localSymbol))
-                    while i < 4:
+                    while i < 5:
                         for o in self.go_long(instrument,
                                               indicators,
                                               offset=i,
@@ -124,12 +138,25 @@ class IBAlgoStrategy(object):
                         i += 1
                     self.log('Placed {} long compound orders on {}.'
                              .format(i, instrument.localSymbol))
+                    oca = []
+                    # Place exit order and stop orders for complete unit
+                    self.log("Placing long exit order for complete {} unit"
+                             .format(instrument.localSymbol))
+                    for o in self.go_long(instrument,
+                                          indicators,
+                                          total_quantity=cash_balance,
+                                          is_exit_all=True):
+                        oca.append(o)
+                    for o in clean_stops:
+                        oca.append(o)
+                    for o in oca:
+                        self.ib.placeOrder(instrument, o)
 
                 # If short (<-100 units), place compound short orders:
                 elif is_short:
                     self.log('Currently short on {}. Placing compound orders.'
                              .format(instrument.localSymbol))
-                    while i < 4:
+                    while i < 5:
                         for o in self.go_short(instrument,
                                                indicators,
                                                total_quantity=cash_balance,
@@ -140,25 +167,19 @@ class IBAlgoStrategy(object):
                         i += 1
                     self.log('Placed {} short compound orders on {}.'
                              .format(i, instrument.localSymbol))
-
-            if is_long:
-                # Place exit order for complete unit (all completed orders)
-                self.log("Placing long exit order for complete {} unit"
-                         .format(instrument.localSymbol))
-                for o in self.go_long(instrument,
-                                      indicators,
-                                      total_quantity=cash_balance,
-                                      is_exit_all=True):
-                    self.ib.placeOrder(instrument, o)
-            elif is_short:
-                # Place exit order for complete unit (all completed orders)
-                self.log("Placing short exit order for complete {} unit"
-                         .format(instrument.localSymbol))
-                for o in self.go_short(instrument,
-                                       indicators,
-                                       total_quantity=cash_balance,
-                                       is_exit_all=True):
-                    self.ib.placeOrder(instrument, o)
+                    oca = []
+                    # Place exit order and stop orders for complete unit
+                    self.log("Placing short exit order for complete {} unit"
+                             .format(instrument.localSymbol))
+                    for o in self.go_short(instrument,
+                                           indicators,
+                                           total_quantity=cash_balance,
+                                           is_exit_all=True):
+                        oca.append(o)
+                    for o in clean_stops:
+                        oca.append(o)
+                    for o in oca:
+                        self.ib.placeOrder(instrument, o)
 
 ####################################################
     def connect(self):
@@ -192,6 +213,7 @@ class IBAlgoStrategy(object):
         orders = self.get_open_trades(instrument)
 
         replaced_sl_prices = []
+        stops = []
 
         for o in orders:
             if o.order.parentId == "" and "compound" in o.order.orderRef:
@@ -205,25 +227,21 @@ class IBAlgoStrategy(object):
             if "sl" in o.order.orderRef and o.order.conditions[0].price \
                     not in replaced_sl_prices:
                 replaced_sl_prices.append(o.order.conditions[0].price)
-                self.ib.placeOrder(instrument,
-                                   self.place_order(instrument,
-                                                    self.ib.client.getReqId(),
-                                                    action=o.order.action,
-                                                    order_type=o.order
-                                                        .orderType,
-                                                    tif=o.order.tif,
-                                                    total_quantity=o.order
-                                                        .totalQuantity,
-                                                    transmit=o.order.transmit,
-                                                    price_condition=o.order
-                                                        .conditions[0].price,
-                                                    order_ref=instrument
-                                                        .localSymbol + "_sl_" +
-                                                    str(o.order.orderRef)[-1:],
-                                                    is_more=o.order
-                                                    .conditions[0].isMore))
+                stops.append(self.place_order(instrument,
+                             self.ib.client.getReqId(),
+                             action=o.order.action,
+                             order_type=o.order.orderType,
+                             tif=o.order.tif,
+                             total_quantity=o.order.totalQuantity,
+                             transmit=o.order.transmit,
+                             price_condition=o.order.conditions[0].price,
+                             order_ref=instrument.localSymbol + "_sl_" +
+                             str(o.order.orderRef)[-1:],
+                             is_more=o.order.conditions[0].isMore))
         for o in orders:
             self.ib.cancelOrder(o.order)
+
+        return stops
 
 #####################################################
     def get_open_trades(self, instrument):
@@ -809,12 +827,12 @@ class IBAlgoStrategy(object):
                            length=20))
         long_donchian = pd.DataFrame(ta.donchian(high=df['high'],
                                                  low=df['low'],
-                                                 upper_length=70,
-                                                 lower_length=70))
+                                                 upper_length=55,
+                                                 lower_length=55))
         short_donchian = pd.DataFrame(ta.donchian(high=df['high'],
                                                   low=df['low'],
-                                                  upper_length=8,
-                                                  lower_length=8))
+                                                  upper_length=20,
+                                                  lower_length=20))
         df = pd.concat([df, atr, long_donchian, short_donchian],
                        axis=1,
                        join="outer")
