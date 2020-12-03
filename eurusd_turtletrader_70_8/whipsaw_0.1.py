@@ -149,6 +149,11 @@ class IBAlgoStrategy(object):
                         oca.append(o)
                     for o in clean_stops:
                         oca.append(o)
+                    self.ib.oneCancelsAll(orders=oca,
+                                          ocaGroup="OCA_"
+                                          + str(instrument.localSymbol)
+                                          + str(self.ib.client.getReqId()),
+                                          ocaType=2)
                     for o in oca:
                         self.ib.placeOrder(instrument, o)
 
@@ -178,6 +183,11 @@ class IBAlgoStrategy(object):
                         oca.append(o)
                     for o in clean_stops:
                         oca.append(o)
+                    self.ib.oneCancelsAll(orders=oca,
+                                          ocaGroup="OCA_"
+                                          + str(instrument.localSymbol)
+                                          + str(self.ib.client.getReqId()),
+                                          ocaType=2)
                     for o in oca:
                         self.ib.placeOrder(instrument, o)
 
@@ -240,7 +250,6 @@ class IBAlgoStrategy(object):
                              is_more=o.order.conditions[0].isMore))
         for o in orders:
             self.ib.cancelOrder(o.order)
-
         return stops
 
 #####################################################
