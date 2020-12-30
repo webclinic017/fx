@@ -46,118 +46,186 @@ class IBAlgoStrategy(object):
 
         for instrument in self.instruments:
 
-            # Initial Variable Setup
+            # INITIAL VARIABLE SETUP
+            # Indicators
             indicators = self.get_indicators(instrument)
-
-            open_parents = []
-            open_children = []
-            for o in self.get_open_trades(instrument):
-                if o.order.parentId == 0:
-                    open_parents.append(o)
-                else:
-                    open_children.append(o)
-
-            open_parent_count = len(open_parents)
+            # Cash balance for current instrument as units of that instrument
             cash_balance = self.get_cash_balance(instrument)
+            # Is the total unit (max 4 entries) full?
             unit_full = True
+            # Are we long/short on this instrument?
             is_long = False
             is_short = False
 
+            # Maximum unit size (2% of portfolio) in base currency
             max_unit_size = 0
             for v in self.ib.accountSummary():
                 if v.currency == 'BASE' and v.tag == 'CashBalance':
                     max_unit_size = float(v.value) * float(0.02)
-                    self.log('BASE CURRENCY VALUE: {}'.format(v))
 
+            # Check if long or short based on whether >/< 100 units are traded
             if cash_balance > float(100):
                 is_long = True
 
             if cash_balance < float(-100):
                 is_short = True
 
-            self.log("Unit size for {}: {}. 2p of funds: {}".format(instrument.localSymbol, self.get_cash_balance(instrument) * self.get_usd_exchange(instrument), max_unit_size))
-            if abs(self.get_cash_balance(instrument) * self.get_usd_exchange(instrument)) < \
+            # Check if current unit is small enough to be not full
+            if abs(self.get_cash_balance(instrument)
+               * self.get_atr_multiple(instrument,
+                                       indicators,
+                                       multiplier=0.5)
+               * self.get_base_exchange(instrument)) < \
                max_unit_size:
                 if is_long or is_short:
                     unit_full = False
 
-            self.log("Is the unit full for {}? {}".format(instrument.localSymbol, unit_full))
-
-            # Purge outdated/uneeded open orders:
-            self.clean_orders(instrument)
-
             # If not long or short, place initial entry orders:
-            if cash_balance < 100 and cash_balance > -100:
+            if not is_long and not is_short:
+                orders = self.get_open_trades(instrument)
+                for o in orders:
+                    self.ib.cancelOrder(o.order)
                 self.place_initial_entry_orders(instrument, indicators)
 
             # If there is a unit that is not full:
             if not unit_full:
-                self.log('Checking if long or short for {}...'
-                         .format(instrument.localSymbol))
 
-                if abs(self.get_cash_balance(instrument) * self.get_usd_exchange(instrument)) < \
+                # Save stop information:
+                stops = []
+                for t in self.get_open_trades(instrument):
+                    if "sl" in t.order.orderRef:
+                        stops.append(self.place_order(instrument,
+                                     self.ib.client.getReqId(),
+                                     action=t.order.action,
+                                     order_type=t.order.orderType,
+                                     tif=t.order.tif,
+                                     total_quantity=t.order.totalQuantity,
+                                     transmit=t.order.transmit,
+                                     price_condition=t.order.conditions[0].price,
+                                     order_ref=instrument.localSymbol + "_sl_" +
+                                     str(t.order.orderRef)[-1:],
+                                     is_more=t.order.conditions[0].isMore))
+                
+                self.log("Saved stops {}".format(stops))
+
+                # Cancel open (unfilled) orders:
+                for t in self.get_open_trades(instrument):
+                    self.ib.cancelOrder(t.order)
+
+                # Check how many more entries can be made before unit is full.
+                # i=4 indicates the unit is full.
+                if abs(self.get_cash_balance(instrument)
+                       * self.get_base_exchange(instrument)
+                       * self.get_atr_multiple(instrument,
+                                               indicators,
+                                               multiplier=0.5)) < \
                    max_unit_size * float(0.25):
                     i = 1
-                elif abs(self.get_cash_balance(instrument) * self.get_usd_exchange(instrument)) < \
+                elif abs(self.get_cash_balance(instrument)
+                         * self.get_base_exchange(instrument)
+                         * self.get_atr_multiple(instrument,
+                                                 indicators,
+                                                 multiplier=0.5)) < \
                         max_unit_size * float(0.5):
                     i = 2
-                elif abs(self.get_cash_balance(instrument) * self.get_usd_exchange(instrument)) < \
+                elif abs(self.get_cash_balance(instrument)
+                         * self.get_base_exchange(instrument)
+                         * self.get_atr_multiple(instrument,
+                                                 indicators,
+                                                 multiplier=0.5)) < \
                         max_unit_size * float(0.75):
                     i = 3
                 else:
                     i = 4
 
-                self.log("For instrument {}, i={}".format(instrument.localSymbol, i))
+                # Set compound order offset to be last fill price:
+                last_fill_price = 0
+                for f in self.get_filled_executions(instrument):
+                    if f.execution.avgPrice > last_fill_price:
+                        last_fill_price = f.execution.avgPrice
 
-                # If long (>100 units), place compound long orders:
+                # If long (>100 units), place compound long and exit orders:
                 if is_long:
-                    self.log('Currently long on {}. Placing compound orders.'
-                             .format(instrument.localSymbol))
+
+                    # Create compound orders
                     while i < 4:
                         for o in self.go_long(instrument,
                                               indicators,
                                               offset=i,
-                                              is_compound_order=True):
+                                              is_compound_order=True,
+                                              last_fill_price=last_fill_price):
                             self.ib.placeOrder(instrument, o)
                             self.ib.sleep(1)
                         i += 1
-                    self.log('Placed {} long compound orders on {}.'
-                             .format(i, instrument.localSymbol))
 
-                # If short (<-100 units), place compound short orders:
+                    # Create exit order
+                    long_exit_all = self.go_long(instrument,
+                                                 indicators,
+                                                 total_quantity=cash_balance,
+                                                 is_exit_all=True)
+
+                    # Put all stops and exit orders into an OCA:
+                    oca = []
+                    for s in stops:
+                        oca.append(s)
+                    for o in long_exit_all:
+                        oca.append(o)
+                    self.ib.oneCancelsAll(orders=oca,
+                                          ocaGroup="OCA_"
+                                          + str(instrument.localSymbol)
+                                          + str(self.ib.client.getReqId()),
+                                          ocaType=2)
+
+                    # Place all orders:
+                    for o in oca:
+                        self.ib.placeOrder(instrument, o)
+                        self.ib.sleep(1)
+
+                # If short (<100 units), place compound short and exit orders:
                 elif is_short:
-                    self.log('Currently short on {}. Placing compound orders.'
-                             .format(instrument.localSymbol))
+                    # Create compound orders
                     while i < 4:
                         for o in self.go_short(instrument,
                                                indicators,
-                                               total_quantity=cash_balance,
                                                offset=i,
-                                               is_compound_order=True):
+                                               is_compound_order=True,
+                                               last_fill_price=last_fill_price):
                             self.ib.placeOrder(instrument, o)
                             self.ib.sleep(1)
                         i += 1
-                    self.log('Placed {} short compound orders on {}.'
-                             .format(i, instrument.localSymbol))
 
-            if is_long:
-                # Place exit order for complete unit (all completed orders)
-                self.log("Placing long exit order for complete {} unit"
-                         .format(instrument.localSymbol))
-                for o in self.go_long(instrument,
-                                      indicators,
-                                      total_quantity=cash_balance,
-                                      is_exit_all=True):
-                    self.ib.placeOrder(instrument, o)
-            elif is_short:
-                # Place exit order for complete unit (all completed orders)
-                self.log("Placing short exit order for complete {} unit"
-                         .format(instrument.localSymbol))
-                for o in self.go_short(instrument,
-                                       indicators,
-                                       total_quantity=cash_balance,
-                                       is_exit_all=True):
-                    self.ib.placeOrder(instrument, o)
+                    # Create exit order
+                    short_exit_all = self.go_short(instrument,
+                                                   indicators,
+                                                   total_quantity=cash_balance,
+                                                   is_exit_all=True)
+
+                    # Put all stops and exit orders into an OCA:
+                    oca = []
+                    for s in stops:
+                        oca.append(s)
+                    for o in short_exit_all:
+                        oca.append(o)
+                    self.ib.oneCancelsAll(orders=oca,
+                                          ocaGroup="OCA_"
+                                          + str(instrument.localSymbol)
+                                          + str(self.ib.client.getReqId()),
+                                          ocaType=2)
+
+                    # Place all orders:
+                    for o in oca:
+                        self.ib.placeOrder(instrument, o)
+                        self.ib.sleep(1)
+
+            # VARIABLES USED IN LOGGING ONLY
+            # Current total unit size in base currency.
+            current_unit = round(cash_balance
+                                 * self.get_atr_multiple(instrument,
+                                                         indicators,
+                                                         multiplier=0.5)
+                                 * self.get_base_exchange(instrument))
+            self.log('Currently risking {} base currency on {}'
+                     .format(current_unit, instrument.localSymbol))
 
 ####################################################
     def connect(self):
@@ -168,7 +236,7 @@ class IBAlgoStrategy(object):
             ib = IB()
             ib.connect('127.0.0.1', 7497, clientId=0)
             ib.reqAutoOpenOrders(True)
-            # Requesting manual pending orders doesn't work with this:            
+            # Requesting manual pending orders doesn't work with this:
             # ib.connect('127.0.0.1', 7497, clientId=1)
             self.log('Connected')
             self.log()
@@ -185,43 +253,6 @@ class IBAlgoStrategy(object):
         print(msg)
 
 #####################################################
-    def clean_orders(self, instrument):
-        """Cleans orders based on strategy"""
-
-        orders = self.get_open_trades(instrument)
-
-        replaced_sl_prices = []
-
-        for o in orders:
-            if o.order.parentId == "" and "compound" in o.order.orderRef:
-                self.ib.cancelOrder(o.order)
-
-        for o in orders:
-            if "sl" in o.order.orderRef:
-                self.log("Replaced sl prices {}".format(replaced_sl_prices))
-                self.log("current sl order price: {}".format(o.order.conditions[0].price))
-            if "sl" in o.order.orderRef and o.order.conditions[0].price not in replaced_sl_prices:
-                self.log("Placing NEW STOP!!!")
-                replaced_sl_prices.append(o.order.conditions[0].price)
-                self.ib.placeOrder(instrument,
-                                   self.place_order(instrument,
-                                                    self.ib.client.getReqId(),
-                                                    action=o.order.action,
-                                                    order_type=o.order.orderType,
-                                                    tif=o.order.tif,
-                                                    total_quantity=o.order.totalQuantity,
-                                                    transmit=o.order.transmit,
-                                                    price_condition=o.order.conditions[0].price,
-                                                    order_ref=instrument.localSymbol + "_sl_" + str(o.order.orderRef)[-2:-1],
-                                                    is_more=o.order.conditions[0].isMore))
-
-        # Cancel all extra entry/exit orders
-        # (exit to be replaced later in self.run),
-        # and orders without a proper order reference
-        for o in orders:
-            self.ib.cancelOrder(o.order)
-
-#####################################################
     def get_open_trades(self, instrument):
         """Returns the number of unfilled trades open for a currency"""
         orders = []
@@ -229,14 +260,24 @@ class IBAlgoStrategy(object):
         for t in self.ib.openTrades():
             if t.contract.localSymbol == instrument.localSymbol:
                 orders.append(t)
-                # self.log('Found order for instrument {}: {} {}'
-                #          .format(instrument.localSymbol,
-                #                  t.order.action,
-                #                 t.order.totalQuantity))
         order_count = len(orders)
         self.log('Currently in {} open orders for instrument {}.'
                  .format(order_count, instrument.localSymbol))
         return orders
+
+#####################################################
+    def get_filled_executions(self, instrument):
+        """Returns the number of filled executions in past week"""
+        fills = []
+        self.ib.sleep(1)
+        for f in self.ib.reqExecutions():
+            if f.contract.localSymbol == instrument.localSymbol:
+                self.log('Found trade with symbol {}: {}'.format(f.contract.localSymbol, f.execution.avgPrice))
+                fills.append(f)
+        fill_count = len(fills)
+        self.log('Currently in {} filled trades for instrument {}.'
+                 .format(fill_count, instrument.localSymbol))
+        return fills
 
 #####################################################
     def add_instrument(self, instrument_type, ticker,
@@ -286,67 +327,62 @@ class IBAlgoStrategy(object):
         return cash_balance
 
 #####################################################
-    def get_usd_exchange(self, instrument):
-        """Get the exchange rate between currency and USD"""
+    def get_base_exchange(self, instrument):
+        """Get the exchange rate between currency and base"""
         assert (instrument.localSymbol in ['GBP.JPY', 'AUD.CAD', 'EUR.USD']), \
                'Invalid Currency!'
 
-        if instrument.localSymbol == 'GBP.JPY':
-            ticker = self.ib.reqMktData(contract=Forex(pair='USDJPY',
-                                                       symbol='USD',
-                                                       currency='JPY'))
-            self.ib.sleep(1)
-            return 1 / ticker.marketPrice()
-        elif instrument.localSymbol == 'AUD.CAD':
-            ticker = self.ib.reqMktData(contract=Forex(pair='USDCAD',
-                                                       symbol='USD',
-                                                       currency='CAD'))
-            self.ib.sleep(1)
-            return 1 / ticker.marketPrice()
-        elif instrument.localSymbol == 'EUR.USD':
+        base = ""
+
+        for v in self.ib.accountValues():
+            if v.tag == 'AvailableFunds':
+                base = v.currency
+
+        if base == instrument.localSymbol[-3:]:
             return 1
+        elif instrument.localSymbol[-3:] != 'USD':
+            pair = base + instrument.localSymbol[-3:]
+            self.log("Getting current exchange rate for pair {}".format(pair))
+
+            ticker = self.ib.reqMktData(contract=Forex(pair=pair,
+                                                       symbol=base,
+                                                       currency=instrument
+                                                       .localSymbol[-3:]))
+            self.ib.sleep(1)
+            return 1 / ticker.marketPrice()
+        elif instrument.localSymbol[-3:] == 'USD':
+            pair = instrument.localSymbol[-3:] + base
+            self.log("Getting current exchange rate for pair {}".format(pair))
+
+            ticker = self.ib.reqMktData(contract=Forex(pair=pair,
+                                                       symbol=instrument
+                                                       .localSymbol[-3:],
+                                                       currency=base))
+            self.ib.sleep(1)
+            return ticker.marketPrice()
 
 #####################################################
     def set_position_size(self, instrument, indicators, sl_size):
-        """Sets position size in USD based on available funds and volitility"""
+        """Sets position size in BASE based on available funds and volitility"""
         position_size = 0
 
-        # Get position size in USD
+        # Get position size in BASE
         available_funds = self.get_available_funds()
         equity_at_risk = available_funds * 0.005
-        # size_in_usd = int(round(equity_at_risk / sl_size, 2))
 
-        # Get position size as units of symbol
-        if instrument.localSymbol == 'EUR.USD':
+        base = ""
+
+        for v in self.ib.accountValues():
+            if v.tag == 'AvailableFunds':
+                base = v.currency
+
+        if base == instrument.localSymbol[-3:]:
             position_size = round(equity_at_risk / sl_size)
-        elif instrument.localSymbol == 'GBP.JPY':
-            ticker = self.ib.reqMktData(contract=Forex(pair='USDJPY',
-                                                       symbol='USD',
-                                                       currency='JPY'))
-            self.ib.sleep(1)
-            try:
-                position_size = round(ticker.marketPrice()
-                                      * equity_at_risk
-                                      / sl_size)
-            except:
-                ValueError("Inappropriate ticker price returned. \
-                            Cannot calculate position size!")
-        elif instrument.localSymbol == 'AUD.CAD':
-            ticker = self.ib.reqMktData(contract=Forex(pair='USDCAD',
-                                                       symbol='USD',
-                                                       currency='CAD'))
-            self.ib.sleep(1)
-            try:
-                position_size = round(ticker.marketPrice()
-                                      * equity_at_risk
-                                      / sl_size)
-            except:
-                ValueError("Inappropriate ticker price returned. \
-                            Cannot calculate position size!")
         else:
-            self.log('Invalid instrument {}! Could not calculate position size.'
-                     .format(instrument.localSymbol))
-            return None
+            position_size = round((1 / self.get_base_exchange(instrument))
+                                  * equity_at_risk
+                                  / sl_size)
+
         return position_size
 
 #####################################################
@@ -379,6 +415,7 @@ class IBAlgoStrategy(object):
     def go_short(self, instrument, indicators, *args, **kwargs):
         """Place short order according to strategy with an offset from LTL"""
         offset = kwargs.get('offset', 0)
+        last_fill_price = kwargs.get('last_fill_price', None)
         is_exit_all = kwargs.get('is_exit_all', False)
         is_compound_order = kwargs.get('is_compound_order', False)
         sl_size = kwargs.get('sl_size',
@@ -391,8 +428,7 @@ class IBAlgoStrategy(object):
                                                          indicators
                                                          ['long_dcl']
                                                          [(indicators.axes[0]
-                                                           .stop - 1)]) \
-            - offset * self.get_atr_multiple(instrument, indicators)
+                                                           .stop - 1)])
         short_exit_condition = self.adjust_for_price_increments(instrument,
                                                                 indicators
                                                                 ['short_dcu']
@@ -418,123 +454,60 @@ class IBAlgoStrategy(object):
             return orders
 
         compound_order_ref = ""
+        price_condition = long_term_low
 
-        if is_compound_order:
+        if is_compound_order and last_fill_price:
             compound_order_ref = "_compound"
+            price_condition = last_fill_price \
+                - offset * self.get_atr_multiple(instrument, indicators)
 
-        short_entry_a = self.place_order(instrument=instrument,
-                                         order_id=self.ib.client.getReqId(),
-                                         action="SELL",
-                                         order_type="MKT",
-                                         total_quantity=total_quantity,
-                                         transmit=False,
-                                         price_condition=long_term_low,
-                                         is_more=False,
-                                         order_ref=str(instrument.localSymbol + compound_order_ref + "_short_entry_a"))
+        short_entry = self.place_order(instrument=instrument,
+                                       order_id=self.ib.client.getReqId(),
+                                       action="SELL",
+                                       order_type="MKT",
+                                       total_quantity=total_quantity,
+                                       transmit=False,
+                                       price_condition=price_condition,
+                                       is_more=False,
+                                       order_ref=str(instrument.localSymbol
+                                                     + compound_order_ref
+                                                     + "_short_entry"))
 
-        short_sl_a = self.place_order(instrument=instrument,
+        short_sl = self.place_order(instrument=instrument,
+                                    order_id=self.ib.client.getReqId(),
+                                    action="BUY",
+                                    order_type="MKT",
+                                    total_quantity=total_quantity,
+                                    transmit=False,
+                                    parent_id=short_entry.orderId,
+                                    price_condition=price_condition + sl_size,
+                                    is_more=True,
+                                    order_ref=str(instrument.localSymbol
+                                                  + compound_order_ref
+                                                  + "_short_sl"))
+        short_exit = self.place_order(instrument=instrument,
                                       order_id=self.ib.client.getReqId(),
                                       action="BUY",
                                       order_type="MKT",
                                       total_quantity=total_quantity,
-                                      transmit=False,
-                                      parent_id=short_entry_a.orderId,
-                                      price_condition=long_term_low + sl_size,
+                                      transmit=True,
+                                      parent_id=short_entry.orderId,
+                                      price_condition=short_exit_condition,
                                       is_more=True,
-                                      order_ref=str(instrument.localSymbol + compound_order_ref + "_short_sl_a"))
-        short_exit_a = self.place_order(instrument=instrument,
-                                        order_id=self.ib.client.getReqId(),
-                                        action="BUY",
-                                        order_type="MKT",
-                                        total_quantity=total_quantity,
-                                        transmit=False,
-                                        parent_id=short_entry_a.orderId,
-                                        price_condition=short_exit_condition,
-                                        is_more=True,
-                                        order_ref=str(instrument.localSymbol + compound_order_ref + "_short_exit_a"))
+                                      order_ref=str(instrument.localSymbol
+                                                    + compound_order_ref
+                                                    + "_short_exit"))
 
-        short_entry_b = self.place_order(instrument=instrument,
-                                         order_id=self.ib.client.getReqId(),
-                                         action="SELL",
-                                         order_type="MKT",
-                                         total_quantity=total_quantity,
-                                         transmit=False,
-                                         parent_id=short_sl_a.orderId,
-                                         price_condition=long_term_low,
-                                         is_more=False,
-                                         order_ref=str(instrument.localSymbol + compound_order_ref + "_short_entry_b"))
-        short_sl_b = self.place_order(instrument=instrument,
-                                      order_id=self.ib.client.getReqId(),
-                                      action="BUY",
-                                      order_type="MKT",
-                                      total_quantity=total_quantity,
-                                      transmit=False,
-                                      parent_id=short_entry_b.orderId,
-                                      price_condition=long_term_low + sl_size,
-                                      is_more=True,
-                                      order_ref=str(instrument.localSymbol + compound_order_ref + "_short_sl_b"))
-        short_exit_b = self.place_order(instrument=instrument,
-                                        order_id=self.ib.client.getReqId(),
-                                        action="BUY",
-                                        order_type="MKT",
-                                        total_quantity=total_quantity,
-                                        transmit=False,
-                                        parent_id=short_entry_b.orderId,
-                                        price_condition=short_exit_condition,
-                                        is_more=True,
-                                        order_ref=str(instrument.localSymbol + compound_order_ref + "_short_exit_b"))
-
-        short_entry_c = self.place_order(instrument=instrument,
-                                         order_id=self.ib.client.getReqId(),
-                                         action="SELL",
-                                         order_type="MKT",
-                                         total_quantity=total_quantity,
-                                         transmit=False,
-                                         parent_id=short_sl_b.orderId,
-                                         price_condition=long_term_low,
-                                         is_more=False,
-                                         order_ref=str(instrument.localSymbol + compound_order_ref + "_short_entry_c"))
-        short_sl_c = self.place_order(instrument=instrument,
-                                      order_id=self.ib.client.getReqId(),
-                                      action="BUY",
-                                      order_type="MKT",
-                                      total_quantity=total_quantity,
-                                      transmit=False,
-                                      parent_id=short_entry_c.orderId,
-                                      price_condition=long_term_low + sl_size,
-                                      is_more=True,
-                                      order_ref=str(instrument.localSymbol + compound_order_ref + "_short_sl_c"))
-        short_exit_c = self.place_order(instrument=instrument,
-                                        order_id=self.ib.client.getReqId(),
-                                        action="BUY",
-                                        order_type="MKT",
-                                        total_quantity=total_quantity,
-                                        transmit=True,
-                                        parent_id=short_entry_c.orderId,
-                                        price_condition=short_exit_condition,
-                                        is_more=True,
-                                        order_ref=str(instrument.localSymbol + compound_order_ref + "_short_exit_c"))
-
-        orders = [short_entry_a,
-                  short_sl_a,
-                  short_exit_a,
-                  short_entry_b,
-                  short_sl_b,
-                  short_exit_b,
-                  short_entry_c,
-                  short_sl_c,
-                  short_exit_c]
+        orders = [short_entry,
+                  short_sl,
+                  short_exit]
         return orders
 
 #####################################################
-    def place_stop_for_filled_trade(self, instrument, trade, indicators):
-        """Place stop for a trade that has already been filled"""
-        total_quantity = trade.order.totalQuantity
-
-#####################################################
     def go_long(self, instrument, indicators, *args, **kwargs):
-        """Place long order according to strategy with an offset from LTH"""
+        """Return long order according to strategy with an offset from LTH"""
         offset = kwargs.get('offset', 0)
+        last_fill_price = kwargs.get('last_fill_price', None)
         sl_size = kwargs.get('sl_size',
                              self.get_atr_multiple(instrument, indicators))
         is_exit_all = kwargs.get('is_exit_all', False)
@@ -547,8 +520,7 @@ class IBAlgoStrategy(object):
                                                           indicators
                                                           ['long_dcu']
                                                           [(indicators.axes[0]
-                                                            .stop - 1)]) \
-            + offset * self.get_atr_multiple(instrument, indicators)
+                                                            .stop - 1)])
         long_exit_condition = self.adjust_for_price_increments(instrument,
                                                                indicators
                                                                ['short_dcl']
@@ -581,135 +553,76 @@ class IBAlgoStrategy(object):
             return orders
 
         compound_order_ref = ""
+        price_condition = long_term_high
 
-        if is_compound_order:
+        if is_compound_order and last_fill_price:
             compound_order_ref = "_compound"
+            price_condition = last_fill_price \
+                + offset * self.get_atr_multiple(instrument, indicators)
 
-        long_entry_a = self.place_order(instrument=instrument,
-                                        order_id=self.ib.client.getReqId(),
-                                        action="BUY",
-                                        order_type="MKT",
-                                        total_quantity=total_quantity,
-                                        transmit=False,
-                                        price_condition=long_term_high,
-                                        is_more=True,
-                                        order_ref=str(instrument.localSymbol + compound_order_ref + "_long_entry_a"))
-        long_sl_a = self.place_order(instrument=instrument,
+        long_entry = self.place_order(instrument=instrument,
+                                      order_id=self.ib.client.getReqId(),
+                                      action="BUY",
+                                      order_type="MKT",
+                                      total_quantity=total_quantity,
+                                      transmit=False,
+                                      price_condition=price_condition,
+                                      is_more=True,
+                                      order_ref=str(instrument.localSymbol
+                                                    + compound_order_ref
+                                                    + "_long_entry"))
+        long_sl = self.place_order(instrument=instrument,
+                                   order_id=self.ib.client.getReqId(),
+                                   action="SELL",
+                                   order_type="MKT",
+                                   total_quantity=total_quantity,
+                                   transmit=False,
+                                   parent_id=long_entry.orderId,
+                                   price_condition=price_condition - sl_size,
+                                   is_more=False,
+                                   order_ref=str(instrument.localSymbol
+                                                 + compound_order_ref
+                                                 + "_long_sl"))
+        long_exit = self.place_order(instrument=instrument,
                                      order_id=self.ib.client.getReqId(),
                                      action="SELL",
                                      order_type="MKT",
                                      total_quantity=total_quantity,
-                                     transmit=False,
-                                     parent_id=long_entry_a.orderId,
-                                     price_condition=long_term_high - sl_size,
+                                     transmit=True,
+                                     parent_id=long_entry.orderId,
+                                     price_condition=long_exit_condition,
                                      is_more=False,
-                                     order_ref=str(instrument.localSymbol + compound_order_ref + "_long_sl_a"))
-        long_exit_a = self.place_order(instrument=instrument,
-                                       order_id=self.ib.client.getReqId(),
-                                       action="SELL",
-                                       order_type="MKT",
-                                       total_quantity=total_quantity,
-                                       transmit=False,
-                                       parent_id=long_entry_a.orderId,
-                                       price_condition=long_exit_condition,
-                                       is_more=False,
-                                       order_ref=str(instrument.localSymbol + compound_order_ref + "_long_exit_a"))
+                                     order_ref=str(instrument.localSymbol
+                                                   + compound_order_ref
+                                                   + "_long_exit"))
 
-        long_entry_b = self.place_order(instrument=instrument,
-                                        order_id=self.ib.client.getReqId(),
-                                        action="BUY",
-                                        order_type="MKT",
-                                        total_quantity=total_quantity,
-                                        transmit=False,
-                                        parent_id=long_sl_a.orderId,
-                                        price_condition=long_term_high,
-                                        is_more=True,
-                                        order_ref=str(instrument.localSymbol + compound_order_ref + "_long_entry_b"))
-        long_sl_b = self.place_order(instrument=instrument,
-                                     order_id=self.ib.client.getReqId(),
-                                     action="SELL",
-                                     order_type="MKT",
-                                     total_quantity=total_quantity,
-                                     transmit=False,
-                                     parent_id=long_entry_b.orderId,
-                                     price_condition=long_term_high - sl_size,
-                                     is_more=False,
-                                     order_ref=str(instrument.localSymbol + compound_order_ref + "_long_sl_b"))
-        long_exit_b = self.place_order(instrument=instrument,
-                                       order_id=self.ib.client.getReqId(),
-                                       action="SELL",
-                                       order_type="MKT",
-                                       total_quantity=total_quantity,
-                                       transmit=False,
-                                       parent_id=long_entry_b.orderId,
-                                       price_condition=long_exit_condition,
-                                       is_more=False,
-                                       order_ref=str(instrument.localSymbol + compound_order_ref + "_long_exit_b"))
-
-        long_entry_c = self.place_order(instrument=instrument,
-                                        order_id=self.ib.client.getReqId(),
-                                        action="BUY",
-                                        order_type="MKT",
-                                        total_quantity=total_quantity,
-                                        transmit=False,
-                                        parent_id=long_sl_b.orderId,
-                                        price_condition=long_term_high,
-                                        is_more=True,
-                                        order_ref=str(instrument.localSymbol + compound_order_ref + "_long_entry_c"))
-        long_sl_c = self.place_order(instrument=instrument,
-                                     order_id=self.ib.client.getReqId(),
-                                     action="SELL",
-                                     order_type="MKT",
-                                     total_quantity=total_quantity,
-                                     transmit=False,
-                                     parent_id=long_entry_c.orderId,
-                                     price_condition=long_term_high - sl_size,
-                                     is_more=False,
-                                     order_ref=str(instrument.localSymbol + compound_order_ref + "_long_sl_c"))
-        long_exit_c = self.place_order(instrument=instrument,
-                                       order_id=self.ib.client.getReqId(),
-                                       action="SELL",
-                                       order_type="MKT",
-                                       total_quantity=total_quantity,
-                                       transmit=True,
-                                       parent_id=long_entry_c.orderId,
-                                       price_condition=long_exit_condition,
-                                       is_more=False,
-                                       order_ref=str(instrument.localSymbol + compound_order_ref + "_long_exit_c"))
-
-        orders = [long_entry_a,
-                  long_sl_a,
-                  long_exit_a,
-                  long_entry_b,
-                  long_sl_b,
-                  long_exit_b,
-                  long_entry_c,
-                  long_sl_c,
-                  long_exit_c]
+        orders = [long_entry,
+                  long_sl,
+                  long_exit]
         return orders
 
 #####################################################
     def place_initial_entry_orders(self, instrument, indicators):
-        """Initial entry"""
+        """Places initial long & short order entries with IBKR for instrument"""
+        # Trade parameters:
         sl_size = self.get_atr_multiple(instrument, indicators)
         total_quantity = self.set_position_size(instrument,
                                                 indicators,
                                                 sl_size)
 
-        self.log("Placing long initial orders for instrument {}"
-                 .format(instrument.localSymbol))
+        # Create initial short order entries:
         long_entry_attempts = self.go_long(instrument,
                                            indicators,
                                            sl_size=sl_size,
                                            total_quantity=total_quantity)
 
-        self.log("Placing short initial orders for instrument {}"
-                 .format(instrument.localSymbol))
+        # Create initial short order entries:
         short_entry_attempts = self.go_short(instrument,
                                              indicators,
                                              sl_size=sl_size,
                                              total_quantity=total_quantity)
 
+        # Put long and short order entries into OCA:
         self.ib.oneCancelsAll(orders=[long_entry_attempts[0],
                                       short_entry_attempts[0]],
                               ocaGroup="OCA_"
@@ -717,6 +630,7 @@ class IBAlgoStrategy(object):
                               + str(self.ib.client.getReqId()),
                               ocaType=1)
 
+        # Place orders:
         orders = []
         for o in long_entry_attempts:
             orders.append(o)
@@ -737,6 +651,12 @@ class IBAlgoStrategy(object):
                     total_quantity=0,
                     transmit=False,
                     *args, **kwargs):
+        """Places order with IBKR given relevant info.
+        kwargs:
+        bool is_more - True if price condition is >, False if <
+        bool price_condition - True if there is a price condition, else False
+        order_ref - can manually input order reference number
+        parent_id - can manually input parent order ID"""
         is_more = kwargs.get('is_more', "ERROR")
         price_condition = kwargs.get('price_condition', "ERROR")
         parent_id = kwargs.get('parent_id', "ERROR")
@@ -765,6 +685,7 @@ class IBAlgoStrategy(object):
 
 #####################################################
     def get_indicators(self, instrument):
+        """Returns 55 & 20 donchian channels for instrument"""
         bars = self.ib.reqHistoricalData(contract=instrument,
                                          endDateTime='',
                                          durationStr='6 M',
@@ -781,12 +702,12 @@ class IBAlgoStrategy(object):
                            length=20))
         long_donchian = pd.DataFrame(ta.donchian(high=df['high'],
                                                  low=df['low'],
-                                                 upper_length=70,
-                                                 lower_length=70))
+                                                 upper_length=55,
+                                                 lower_length=55))
         short_donchian = pd.DataFrame(ta.donchian(high=df['high'],
                                                   low=df['low'],
-                                                  upper_length=8,
-                                                  lower_length=8))
+                                                  upper_length=20,
+                                                  lower_length=20))
         df = pd.concat([df, atr, long_donchian, short_donchian],
                        axis=1,
                        join="outer")
@@ -809,7 +730,7 @@ if __name__ == '__main__':
     # Add instruments to trade
     algo.add_instrument('Forex', ticker='GBPJPY', symbol='GBP', currency='JPY')
     algo.add_instrument('Forex', ticker='EURUSD', symbol='EUR', currency='USD')
-    algo.add_instrument('Forex', ticker='AUDCAD', symbol='AUD', currency='CAD')
+    # algo.add_instrument('Forex', ticker='AUDCAD', symbol='AUD', currency='CAD')
 
     # Run for the day
     algo.run()
